@@ -1,1 +1,5 @@
-<h1>Login Admin</h1>
+@extends('admin.home')
+
+@section('content')
+
+@endsection

@@ -1,0 +1,83 @@
+.border-md-right {
+  border-right: 1px solid silver;
+}
+  
+@media (max-width: 768px) {  
+  .border-md-right {
+    border-right: none;
+  }
+  
+}
+
+.btn-cancel {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+  box-shadow: none;
+}
+
+.btn-secondary:hover {
+  color: #fff;
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+.btn-secondary:focus, .btn-secondary.focus {
+  color: #fff;
+  background-color: #5a6268;
+  border-color: #545b62;
+  box-shadow: 0 0 0 0 rgba(130, 138, 145, 0.5);
+}
+
+.btn-secondary.disabled, .btn-secondary:disabled {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active,
+.show > .btn-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: #545b62;
+  border-color: #4e555b;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-secondary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0 rgba(130, 138, 145, 0.5);
+}
+
+hr.dashed {
+  border-top: 2px dashed #999;
+}
+
+hr.dotted {
+  border-top: 2px dotted #999;
+}
+
+hr.solid {
+  border-top: 2px solid #999;
+}
+
+
+hr.hr-text {
+position: relative;
+  border: none;
+  height: 0.5px;
+  background: #999;
+}
+
+hr.hr-text::before {
+  content: attr(data-content);
+  display: inline-block;
+  background: #fff;
+  font-weight: normal;
+  font-size: 0.85rem;
+  color: #999;
+  border-radius: 30rem;
+  padding: 0.2rem 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -33,7 +33,6 @@
         <button class="btn mt-3 signin">Login</button>
         @csrf
     </form>
-    <button class="btn mt-3 signup"> Sign up</button>
 </div>
 @include('template.footer')
 </body>

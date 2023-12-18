@@ -9,6 +9,8 @@ class MainController extends Controller
 {
     public function index()
     {
-        echo "Admin";
+        return view('admin.dashboard', [
+            'title' => 'Trang chủ',
+        ]);
     }
 }

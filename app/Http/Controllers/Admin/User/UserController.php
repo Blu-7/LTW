@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin\User;
 use App\Http\Services\User\UserService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 
@@ -31,9 +32,12 @@ class UserController extends Controller
         if (Auth::attempt([
             'email' => $request->input('email'),
             'password' => $request->input('password'),
+            'id' => 1
         ], $remember)){
             return redirect()->route('admin');
         }
+//        Session::flush();
+        Session::flash('error', 'Email or password not match');
         return redirect()->back();
     }
 }
