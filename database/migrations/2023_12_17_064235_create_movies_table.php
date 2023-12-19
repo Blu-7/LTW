@@ -19,9 +19,8 @@ class CreateMoviesTable extends Migration
             $table->string('name');
             $table->longText('description');
             $table->integer('deleted');
-            $table->string('poster');
-            $table->longText('content');
-            $table->integer('active');
+            $table->string('poster')->nullable();
+            $table->string('status')->nullable();
             $table->date('start_date');
             $table->date('end_date');
         });

@@ -32,36 +32,45 @@
                         <div class="card-header">
                             <h3 class="card-title"></h3>
                         </div>
-                        <!-- /.card-header -->
 
-                        <!-- form start -->
-                        <form method="post" action="/admin/movies/create/">
-                            <div class="card-body">
-                                <div class="row justify-content-center">
-                                    <div class="form-group col-md-11">
-                                        <label for="name" class="col-form-label">Tên phim</label>
-                                        <input type="text" name="name" id="name" value="{{old('name')}}" class="form-control" placeholder="Tên phim">
-                                        <span class="error invalid-feedback name_error"></span>
-                                    </div>
+
+                    <form action="{{route('movies.store')}}" method="POST" enctype="multipart/form-data">
+                        <div class="card-body">
+                            <div class="row justify-content-center">
+                                <div class="form-group col-md-12">
+                                    <label for="name" class="col-form-label">Tên phim</label>
+                                    <input type="text" name="name" id="name" value="{{old('name')}}" class="form-control" placeholder="Tên phim">
                                 </div>
-                                <div class="row justify-content-center">
-                                    <div class="form-group col-md-11">
-                                        <label class="col-form-label" for="description">Mô tả phim</label>
-                                        <textarea style="resize:none" rows="4" name="description" class="form-control" id="description" placeholder="Mô tả phim">{{old('description')}}</textarea>
-                                        <span class="error invalid-feedback description_error"></span>
-                                    </div>
-                                </div>
-                            <!-- /.card-body -->
-                            <div class="card-footer">
-                                <button class="btn btn-primary float-right">Thêm danh mục</button>
                             </div>
-                            @csrf
-                        </form>
-                    </div>
-                    <!-- /.card -->
+                            <div class="row justify-content-center">
+                                <div class="form-group col-md-12">
+                                    <label class="col-form-label" for="description">Mô tả phim</label>
+                                    <textarea style="resize:none" rows="4" name="description" class="form-control" id="description" placeholder="Mô tả phim">{{old('description')}}</textarea>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="form-group col-md-4">
+                                    <label for="start_date" class="col-form-label">Ngày khởi chiếu</label>
+                                    <input type="date" name="start_date" id="start_date" class="form-control" placeholder="dd/mm/yyyy">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="end_date" class="col-form-label">Ngày kết thúc</label>
+                                    <input type="date" name="end_date" id="end_date" class="form-control" placeholder="dd/mm/yyyy">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="poster" class="col-form-label">Poster</label><br>
+                                    <input type="file" name="poster" id="poster">
+                                </div>
+                            </div>
+                        <div class="card-footer">
+                            <button type="submit" class="btn btn-primary float-right">Thêm danh mục</button>
+                        </div>
+                        @csrf
+                    </form>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 @endsection
 @section('footer')
     <script>
