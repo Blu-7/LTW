@@ -3,30 +3,35 @@
 namespace App\Http\Services\Upload;
 
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Storage;
 
 class uploadService
 {
     public function store($request)
     {
-        if ($request->hasFile('poster')) {
+        $filename = '';
+        if ($request->hasFile('upload')) {
             try {
-                $path = $request->file('poster')->store('uploads');
-//                $file = $request->file('file');
-//                $folder = $request->input('folder');
-//                $pre = strtoupper(substr($folder, 0, 1));
-//
-//                $name = $pre . 'IMG' . date('Ymd') . uniqid() . '.' . $file->getClientOriginalExtension();
-//
-//                $path_full = 'uploads/' . $folder;
-//                $file->storeAs(
-//                    'public/' . $path_full, $name
-//                );
-//
-//                return '/storage/' . $path_full . '/' . $name;
+                $filename = $request->file('upload')->store('public/uploads');
+                $filename = str_replace('public', '/storage', $filename);
+                return $filename;
 
             } catch(\Exception $err) {
                 Session::flash('error', $err->getMessage());
+                return false;
             }
+        }
+
+    }
+
+    public function destroy($request)
+    {
+        try {
+            $path = str_replace('/storage', 'public', $request->input('val'));
+//            Storage::delete($path);
+            return true;
+        } catch (\Exception $err){
+            return false;
         }
 
     }

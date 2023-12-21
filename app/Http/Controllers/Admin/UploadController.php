@@ -14,9 +14,33 @@ class UploadController extends Controller
     {
         $this->uploadService = $uploadService;
     }
-    public function store(Request $request){
-        dd($request->all());
-        $this->uploadService->store($request);
+    public function store(Request $request)
+    {
+        $result = $this->uploadService->store($request);
 
+        if ($result != false) {
+            return response()->json([
+                'success' => true,
+                'url' => $result,
+                'msg' => 'Upload hình ảnh thành công'
+            ]);
+        }
+        return response()->json([
+            'success' => false,
+            'msg' => 'Không upload được hình ảnh'
+        ]);
+    }
+
+    public function destroy(Request $request)
+    {
+        $result = $this->uploadService->destroy($request);
+        if ($result) {
+            return response()->json([
+                'success' => true,
+            ]);
+        }
+        return response()->json([
+            'success' => false
+        ]);
     }
 }

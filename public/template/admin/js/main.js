@@ -19,6 +19,43 @@ $(document).on('click', 'input[name="main_checkbox"]', function() {
     toggleDeleteAllBtn()
 })
 
+$('.alert-success').show(function (){
+    this.remove();
+})
+$('#upload').change(function(){
+    var self = this;
+    const form = new FormData();
+
+    form.append('upload', this.files[0]);
+
+    data = $('#poster').val()
+    if(data !== '') {
+        removeUploadStorage(data)
+    }
+
+    $.ajax({
+        processData: false,
+        contentType: false,
+        type: 'POST',
+        dataType: 'JSON',
+        data: form,
+        url: '/admin/upload/service',
+        success: function(result) {
+            if (result.success === true) {
+                var show = $('#image_show');
+                show.textContent = '';
+                show.html('<a href="' + result.url + '" target="_blank">' +
+                    '<img src="' + result.url + '" width=100% class="img-thumbnail" alt="image"></a>');
+                var fileName = self.files[0].name;
+                $('#file').text(fileName);
+                $('#poster').val(result.url);
+            } else {
+                showErrorAlert()
+            }
+        }
+    })
+})
+
 $(document).on('change', 'input[name="item_checkbox"]', function() {
     if($('input[name="item_checkbox"]').length == $('input[name="item_checkbox"]:checked').length) {
         $('input[name="main_checkbox"]').prop('checked', true);
@@ -40,24 +77,28 @@ function toggleDeleteAllBtn() {
 //--------- SHOW ALERT ---------//
 function showSuccessAlert(result) {
     swal.fire({
-        title: 'DalaHabo Admin',
-        text: result.message,
+        title: 'Hacimi',
+        text: result.msg,
         icon: 'success',
         width: 400,
         showCloseButton:true,
-        allowOutsideClick:false
-    })
+        allowOutsideClick:false,
+    }).then(function (){
+        location.reload();
+    });
 }
 
 function showErrorAlert() {
     swal.fire({
-        title: 'DalaHabo Admin',
+        title: 'Hacimi',
         html: 'Có lỗi xảy ra. Vui lòng thử lại',
         icon: 'error',
         width: 400,
         showCloseButton:true,
         allowOutsideClick:false
-    })
+    }).then(function(){
+       location.reload()
+    });
 }
 
 //--------- SHOW INPUT ERRORS ---------//
@@ -422,8 +463,8 @@ function setCount() {
 //---- 1. Remove a record:
 function removeRow(id, url, tableId) {
     swal.fire({
-        title: 'DalaHabo Admin',
-        html: 'Xóa không thể khôi phục. <br> Bạn có chắc chắn muốn <b>xóa</b> mục này không?',
+        title: 'Hacimi',
+        html: 'Bạn có chắc chắn muốn <b>xóa</b> mục này không?',
         icon: 'warning',
         showCloseButton:true,
         showCancelButton:true,
@@ -440,10 +481,11 @@ function removeRow(id, url, tableId) {
                 data: {id},
                 url: url,
                 success: function (result) {
-                    if(result.error === false) {
-                        $('#' + tableId + ' tbody #' + id).remove();
-                        setCount()
-                        showSuccessAlert(result)
+                    console.log(result)
+                    if(result.success === true) {
+                        // $('#' + tableId + ' tbody #' + id).remove();
+                        setCount();
+                        showSuccessAlert(result);
                     } else {
                         showErrorAlert()
                     }
@@ -563,7 +605,7 @@ function removeUploadStorage(val) {
         type: 'DELETE',
         datatype: 'JSON',
         data: {val},
-        url: '/admin/destroy/services',
+        url: '/admin/destroy/service',
     })
 }
 
@@ -680,24 +722,6 @@ $(function () {
         }
     });
 })
-
-//---- 3. Upload:
-$('#poster').change(function (){
-    const form = new FormData();
-    form.append('poster', this.files[0]);
-    $.ajax({
-        processData: false,
-        contentType: false,
-        type: 'POST',
-        dataType: 'JSON',
-        data: {form},
-        url: '/admin/upload/service',
-        success: function(result) {
-            console.log(result);
-        }
-
-    });
-});
 
 $('#form-pwd').on('submit', function(e) {
     e.preventDefault();
