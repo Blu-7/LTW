@@ -1,0 +1,63 @@
+.bg-cyan {
+    background-color: #a1cbef!important;
+}
+
+.intro-brand-custom {
+    display: inline-block;
+    padding-top: 0.32rem;
+    padding-bottom: 0.32rem;
+    margin-right: 2.5rem;
+    font-size: 1.125rem;
+    line-height: inherit;
+    white-space: nowrap;
+    text-decoration: none;
+    color: black;
+}
+.intro-intro {
+    padding-top: 2vw;
+    width: 100%;
+    color: rgb(41, 67, 92);
+    height: 100%;
+    position: absolute;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Nunito";
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+.intro-text {
+    padding-top: 7%;
+    width: 100%;
+    color: rgb(41, 67, 92);
+    height: 100%;
+    position: absolute;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Nunito";
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+.intro-team {
+    top: 20vw;
+    width: 15vw;
+    height: 15vw;
+    position: absolute;
+    border-radius: 1000px;
+}
+.intro-team-name {
+    top: 37vw;
+    color: rgb(41, 67, 92);
+    width: 244px;
+    height: auto;
+    position: absolute;
+    font-size: 32px;
+    text-align: center;
+    font-family: Nunito;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
