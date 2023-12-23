@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    @include("admin.template.head")
+    @include("cinema.template.head")
+    @include("cinema.template.navbar")
     <link rel="stylesheet" href="/css/login.css"/>
 </head>
 <body>
@@ -12,8 +13,8 @@
     <div class="text-center mt-4 name">
         Hacimi
     </div>
-    @include('admin.users.alert')
-    <form class="p-3 mt-3" action="/admin/submit/" method="post">
+    @include('cinema.user.alert')
+    <form class="p-3 mt-3" action="/signin/submit/" method="post">
         <div class="form-field d-flex align-items-center">
             <span class="far fa-user"></span>
             <input type="text" name="email" id="email" placeholder="Email">
@@ -30,10 +31,13 @@
                 </label>
             </div>
         </div>
-        <button class="btn mt-3 signin">Login</button>
+        <button class="btn mt-3 signin">Đăng nhập</button>
         @csrf
     </form>
+    <form class="p-3 mt-3" action="{{route('signup')}}" method="get">
+            <button class="btn mt-3 signup"> Đăng ký</button>
+    </form>
 </div>
-@include('admin.template.footer')
+@include('cinema.template.footer')
 </body>
 </html>

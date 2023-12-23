@@ -1,10 +1,12 @@
 <link rel="stylesheet" href="/css/navbar.css">
 <nav class="navbar navbar-expand-lg navbar-light bg-cyan">
     <img class="navbar-logo" width="100" src="/img/logo.png" alt=""/><br>
-    <a class="navbar-brand-custom" href="#">TRANG CHỦ</a>
+    <a class="navbar-brand-custom" href="/index">TRANG CHỦ</a>
     <a class="navbar-brand-custom" href="#">GIỚI THIỆU</a>
     <a class="navbar-brand-custom" href="#">PHIM</a>
     <a class="navbar-brand-custom" href="#">LIÊN HỆ</a>
+    <a class="navbar-brand-custom nav-item ms-auto" href='{{route('signin')}}'>ĐĂNG NHẬP</a>
+    <a class="navbar-brand-custom nav-item ms-2" href='{{route('signup')}}'>ĐĂNG KÝ</a>
 {{--    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">--}}
 {{--        <span class="navbar-toggler-icon"></span>--}}
 {{--    </button>--}}

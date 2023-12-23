@@ -34,10 +34,20 @@ class UserController extends Controller
             'password' => $request->input('password'),
             'id' => 1
         ], $remember)){
+            $result = $this->userService->getUser($request);
+            Session::put('admin', $result);
             return redirect()->route('admin');
         }
-//        Session::flush();
         Session::flash('error', 'Email or password not match');
         return redirect()->back();
+    }
+
+    public function logout(Request $request)
+    {
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+
+        return redirect()->route('login');
     }
 }

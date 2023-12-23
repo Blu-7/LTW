@@ -2,7 +2,7 @@
 
 namespace App\Http\Services\User;
 
-use App\Models\User;
+use App\User;
 use Illuminate\Support\Facades\Storage;
 use App\Helpers\Helper;
 class UserService
@@ -13,8 +13,8 @@ class UserService
         return $result;
     }
 
-    public function getAll() 
-    {   
+    public function getAll()
+    {
         return User::with('role')->orderBy('id')->search()->paginate(10);
     }
 
