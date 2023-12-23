@@ -4,10 +4,8 @@ namespace App\Http\Controllers\User;
 
 use App\Http\Requests\Customer\SignInRequest;
 use App\Http\Requests\Customer\SignUpRequest;
-use App\User;
 use App\Http\Services\User\UserService;
-use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
+use App\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 

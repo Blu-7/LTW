@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\User\Controller;
 use App\Http\Requests\Movie\CreateFormRequest;
-use Illuminate\Http\Request;
 use App\Http\Services\Movie\MovieService;
 use App\Movie;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 
 class MovieController extends Controller

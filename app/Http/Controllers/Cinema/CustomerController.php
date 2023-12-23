@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers\Cinema;
 
-use App\Http\Requests\Customer\CustomerRequest;
+use App\Http\Controllers\User\Controller;
 use App\Models\Customer;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
+
 class CustomerController extends Controller
 {
     /**

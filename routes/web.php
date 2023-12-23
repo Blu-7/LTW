@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Route;
 use \App\Http\Controllers\Admin\UploadController;
 use App\Http\Controllers\Cinema\CustomerController;
 use \Illuminate\Support\Facades\Auth;
+use \App\Http\Controllers\User\IntroController;
 
 ##User login
 Route::get('index', function () {
@@ -19,6 +20,10 @@ Route::get('signin', [LoginController::class, 'index'])->name('signin');
 Route::get('signup', [LoginController::class, 'signup'])->name('signup');
 Route::post('signup/submit', [LoginController::class, 'validateSignup']);
 Route::post('signin/submit', [LoginController::class, 'validateLogin']);
+
+##User view
+
+Route::get('intro', [IntroController::class, 'intro'])->name('intro');
 
 ## Admin Login
 Route::get('admin/login', [UserController::class, 'index'])->name('login');

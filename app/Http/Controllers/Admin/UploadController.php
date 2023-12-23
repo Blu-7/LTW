@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\User\Controller;
 use App\Http\Services\Upload\uploadService;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 
 class UploadController extends Controller
 {
