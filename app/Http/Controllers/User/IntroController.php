@@ -11,10 +11,4 @@ class IntroController extends Controller
         ]);
     }
 
-    public function contact()
-    {
-        return view('cinema.user.contact', [
-            'title' => 'Liên hệ',
-        ]);
-    }
 }
