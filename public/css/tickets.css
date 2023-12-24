@@ -1,0 +1,95 @@
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(217, 217, 217, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    font-size: 2.1vw ;
+}
+h3{
+    text-align: center;
+    font-size: 1.8vw ;
+}
+p {
+    text-align: center;
+    font-size: 1.4vw ;
+}
+.movie-poster {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.movie-details {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    background-color: #FFA33C;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2vw;
+    font-weight: bold;
+    box-shadow: 0 5px 8px rgba(255, 255, 255, 0.7);
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.form-group {
+    margin-bottom: 10px;
+
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 97%;
+    padding: 8px;
+    font-size: 16px;
+    border-color: #D9D9D9;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+
+.form-group input[type="submit"] {
+    background-color:white;
+    color: white;
+    cursor: pointer;
+}
+.button {
+    background-color: rgba(70, 130, 169, 0.97);
+    border: none;
+    color: white;
+    padding: 6px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
