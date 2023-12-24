@@ -11,4 +11,10 @@ class IntroController extends Controller
         ]);
     }
 
+    public function contact()
+    {
+        return view('cinema.template.footer', [
+            'title' => 'Liên hệ',
+        ]);
+    }
 }
