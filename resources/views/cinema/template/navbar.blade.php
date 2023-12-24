@@ -4,6 +4,7 @@
     <a class="navbar-brand-custom" href="/index">TRANG CHỦ</a>
     <a class="navbar-brand-custom" href="/intro">GIỚI THIỆU</a>
     <a class="navbar-brand-custom" href="/film">PHIM</a>
+    <a class="navbar-brand-custom" href="/contact">LIÊN HỆ</a>
     <a class="navbar-brand-custom nav-item ms-auto" href='{{route('signin')}}'>ĐĂNG NHẬP</a>
     <a class="navbar-brand-custom nav-item ms-2" href='{{route('signup')}}'>ĐĂNG KÝ</a>
 {{--    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">--}}
