@@ -1,5 +1,6 @@
 @extends('cinema.template.main')
 @section('header')
+{{--    @include('cinema.template.navbar_custom')--}}
     @include('cinema.slider.header')
 @endsection
 @section('slideshow')

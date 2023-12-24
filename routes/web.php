@@ -13,6 +13,7 @@ use \App\Http\Controllers\User\IntroController;
 use \App\Http\Controllers\User\FilmController;
 use App\Http\Controllers\Cinema\CinemaController;
 use App\Http\Middleware\Admin;
+use App\Http\Controllers\Cinema\SliderController;
 
 ##User login
 Route::get('index', [CinemaController::class, 'index']);
@@ -54,6 +55,16 @@ Route::middleware(['auth', 'is_admin:1'])->group(function (){
                 Route::get('create', [MovieController::class, 'create']);
                 Route::delete('destroy', [MovieController::class, 'destroy']);
                 Route::post('create', [MovieController::class, 'store'])->name('movies.store');
+            });
+
+            ## Sliders
+            Route::prefix('sliders')->group(function (){
+                Route::get('create', [SliderController::class, 'create']);
+                Route::get('edit/{slider}', [SliderController::class, 'show']);
+                Route::post('edit/{slider}', [SliderController::class, 'update']);
+                Route::delete('destroy', [SliderController::class, 'destroy']);
+                Route::get('all', [SliderController::class, 'showAll'])->name('sliders.all');
+                Route::post('create/submit', [SliderController::class, 'store'])->name('sliders.store');
             });
 
             ##Upload

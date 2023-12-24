@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="/css/navbar.css">
 {{--<div id="navbar">--}}
-<nav class="navbar navbar-expand-lg navbar-light bg-cyan fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-cyan">
     <img class="navbar-logo" width="100" src="/img/logo.png" alt=""/><br>
     <a class="navbar-brand-custom" href="/index">TRANG CHỦ</a>
     <a class="navbar-brand-custom" href="/intro">GIỚI THIỆU</a>
@@ -39,4 +39,3 @@
 {{--    </div>--}}
 </nav>
 {{--</div>--}}
-<script src="/js/navbar.js"></script>

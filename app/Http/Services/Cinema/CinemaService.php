@@ -9,8 +9,8 @@ class CinemaService
 {
     public function get()
     {
-        $movies = DB::select("SELECT * FROM movies WHERE deleted = 0 ORDER BY created_at DESC");
-        return $movies;
+        $sliders = DB::select("SELECT * FROM sliders WHERE deleted = 0 ORDER BY created_at DESC");
+        return $sliders;
     }
 
 }

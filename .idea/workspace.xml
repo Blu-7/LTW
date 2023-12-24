@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76b7fcb7-8504-47bb-a3ad-1758291ab223" name="Changes" comment="File migration" />
+    <list default="true" id="76b7fcb7-8504-47bb-a3ad-1758291ab223" name="Changes" comment="File migration">
+      <change afterPath="$PROJECT_DIR$/app/Http/Services/Slider/SliderService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/sliders/all.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/sliders/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/sliders/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Helpers/Helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/Helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Cinema/CustomerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Cinema/CustomerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/template/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/template/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cinema/slideshow.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cinema/slideshow.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cinema/template/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cinema/template/navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -132,24 +144,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JavaScript Debug.Controller.php.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;add-intro&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/DAI_HOC/LTW/wamp/www/LTW&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.Controller.php.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "add-intro",
+    "last_opened_file_path": "D:/wamp64/www/cinema_app/resources/views/admin/sliders",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\wamp64\www\cinema_app\resources\views\admin\sliders" />
+      <recent name="D:\wamp64\www\cinema_app\resources\views\cinema\template" />
       <recent name="D:\DAI_HOC\LTW\wamp\www\LTW" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\wamp64\www\cinema_app\app\Http\Controllers\Cinema" />
     </key>
   </component>
   <component name="RunManager">

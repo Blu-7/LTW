@@ -64,56 +64,7 @@
                         <li class="nav-item">
                             <a href="/admin/movies/create" class="nav-link {{ (request()->is('admin/movies/create')) ? 'active' : ''}}">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Thêm danh mục</p>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="nav-item {{ (request()->is('admin/places/*')) ? 'menu-open' : ''}}">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-map-marked-alt"></i>
-                        <p>
-                            Địa điểm
-                            <i class="fas fa-angle-right right pr-1"></i>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="/admin/places/all" class="nav-link {{ (request()->is('admin/places/all')) ? 'active' : ''}}">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Danh sách địa điểm</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/admin/places/create" class="nav-link {{ (request()->is('admin/places/create')) ? 'active' : ''}}">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Thêm địa điểm</p>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="nav-header">DỊCH VỤ</li>
-                <li class="nav-item {{ (request()->is('admin/tourguides/*')) ? 'menu-open' : ''}}">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-book-reader"></i>
-                        <p>
-                            Hướng dẫn viên
-                            <i class="fas fa-angle-right right pr-1"></i>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="/admin/tourguides/all" class="nav-link {{ (request()->is('admin/tourguides/all')) ? 'active' : ''}}">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Danh sách hướng dẫn viên</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/admin/tourguides/create" class="nav-link {{ (request()->is('admin/tourguides/create')) ? 'active' : ''}}">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Thêm hướng dẫn viên</p>
+                                <p>Thêm phim</p>
                             </a>
                         </li>
                     </ul>
