@@ -7,6 +7,9 @@ use \App\Http\Controllers\Admin\MovieController;
 use Illuminate\Support\Facades\Route;
 use \App\Http\Controllers\Admin\UploadController;
 use App\Http\Controllers\Cinema\CustomerController;
+use \Illuminate\Support\Facades\Auth;
+use \App\Http\Controllers\User\IntroController;
+use \App\Http\Controllers\User\FilmController;
 use App\Http\Controllers\Cinema\CinemaController;
 use App\Http\Middleware\Admin;
 
@@ -23,6 +26,11 @@ Route::get('signup', [LoginController::class, 'signup'])->name('signup');
 Route::post('signup/submit', [LoginController::class, 'validateSignup']);
 Route::post('signin/submit', [LoginController::class, 'validateLogin']);
 
+##User view
+
+Route::get('intro', [IntroController::class, 'intro'])->name('intro');
+Route::get('film', [FilmController::class, 'film'])->name('film');
+Route::get('contact', [IntroController::class, 'contact'])->name('contact');
 ## Admin Login
 Route::get('admin/login', [UserController::class, 'index'])->name('login');
 Route::post('admin/submit', [UserController::class, 'validateLogin']);

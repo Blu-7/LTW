@@ -2,10 +2,12 @@
 {{--<div id="navbar">--}}
 <nav class="navbar navbar-expand-lg navbar-light bg-cyan fixed-top">
     <img class="navbar-logo" width="100" src="/img/logo.png" alt=""/><br>
-    <a class="navbar-brand-custom" href="/index">Trang chủ</a>
-    <a class="navbar-brand-custom" href="#">Giới thiệu </a>
-    <a class="navbar-brand-custom" href="#">Phim</a>
-    <a class="navbar-brand-custom" href="#">Liên hệ</a>
+    <a class="navbar-brand-custom" href="/index">TRANG CHỦ</a>
+    <a class="navbar-brand-custom" href="/intro">GIỚI THIỆU</a>
+    <a class="navbar-brand-custom" href="/film">PHIM</a>
+    <a class="navbar-brand-custom" href="/contact">LIÊN HỆ</a>
+    <a class="navbar-brand-custom nav-item ms-auto" href='{{route('signin')}}'>ĐĂNG NHẬP</a>
+    <a class="navbar-brand-custom nav-item ms-2" href='{{route('signup')}}'>ĐĂNG KÝ</a>
 {{--    @if(\Illuminate\Support\Facades\Auth::user()->id)--}}
 {{--    @if(Auth::user()->id)--}}
     @if(Auth::user()['id'])
