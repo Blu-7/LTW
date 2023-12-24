@@ -42,7 +42,6 @@ class LoginController extends Controller
         ], $remember)){
             $result = $this->userService->getUser($request);
             Session::put('user', $result);
-            Session::flash('success', 'Đăng nhập thành công');
             return redirect()->route('welcome');
         }
         Session::flash('error', 'Sai email hoặc mật khẩu');

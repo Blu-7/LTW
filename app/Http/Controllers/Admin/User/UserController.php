@@ -35,7 +35,7 @@ class UserController extends Controller
             'id' => 1
         ], $remember)){
             $result = $this->userService->getUser($request);
-            Session::put('admin', $result);
+            Session::put('user', $result);
             return redirect()->route('admin');
         }
         Session::flash('error', 'Email or password not match');

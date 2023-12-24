@@ -1,12 +1,23 @@
 <link rel="stylesheet" href="/css/navbar.css">
-<nav class="navbar navbar-expand-lg navbar-light bg-cyan">
+{{--<div id="navbar">--}}
+<nav class="navbar navbar-expand-lg navbar-light bg-cyan fixed-top">
     <img class="navbar-logo" width="100" src="/img/logo.png" alt=""/><br>
-    <a class="navbar-brand-custom" href="/index">TRANG CHỦ</a>
-    <a class="navbar-brand-custom" href="#">GIỚI THIỆU</a>
-    <a class="navbar-brand-custom" href="#">PHIM</a>
-    <a class="navbar-brand-custom" href="#">LIÊN HỆ</a>
-    <a class="navbar-brand-custom nav-item ms-auto" href='{{route('signin')}}'>ĐĂNG NHẬP</a>
-    <a class="navbar-brand-custom nav-item ms-2" href='{{route('signup')}}'>ĐĂNG KÝ</a>
+    <a class="navbar-brand-custom" href="/index">Trang chủ</a>
+    <a class="navbar-brand-custom" href="#">Giới thiệu </a>
+    <a class="navbar-brand-custom" href="#">Phim</a>
+    <a class="navbar-brand-custom" href="#">Liên hệ</a>
+{{--    @if(\Illuminate\Support\Facades\Auth::user()->id)--}}
+{{--    @if(Auth::user()->id)--}}
+    @if(Auth::user()['id'])
+{{--        <a class="navbar-brand-custom nav-item ms-auto">Xin chào {{Auth::user()->name}}</a>--}}
+{{--        <a class="navbar-brand-custom nav-item ms-auto">Xin chào {{\Illuminate\Support\Facades\Auth::user()->name}}</a>--}}
+{{--        <a class="navbar-brand-custom nav-item ms-auto">Xin chào {{Auth::user()->name}}</a>--}}
+        <a class="navbar-brand-custom nav-item ms-auto">Xin chào {{Auth::user()['name']}}</a>
+        <a class="navbar-brand-custom nav-item ms-2">Đăng xuất</a>
+    @else
+        <a class="navbar-brand-custom nav-item ms-auto" href='{{route('signin')}}'>Đăng nhập</a>
+        <a class="navbar-brand-custom nav-item ms-2" href='{{route('signup')}}'>Đăng ký</a>
+    @endif
 {{--    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">--}}
 {{--        <span class="navbar-toggler-icon"></span>--}}
 {{--    </button>--}}
@@ -25,5 +36,7 @@
 {{--                <a class="nav-link disabled" href="#">Disabled</a>--}}
 {{--            </li>--}}
 {{--        </ul>--}}
-    </div>
+{{--    </div>--}}
 </nav>
+{{--</div>--}}
+<script src="/js/navbar.js"></script>

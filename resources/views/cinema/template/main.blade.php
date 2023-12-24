@@ -6,6 +6,7 @@
 </head>
 <body>
     @include('cinema.user.alert')
+    @yield('slideshow')
 </div>
 @include('cinema.template.footer')
 </body>

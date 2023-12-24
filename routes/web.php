@@ -7,14 +7,17 @@ use \App\Http\Controllers\Admin\MovieController;
 use Illuminate\Support\Facades\Route;
 use \App\Http\Controllers\Admin\UploadController;
 use App\Http\Controllers\Cinema\CustomerController;
-use \Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\Cinema\CinemaController;
+use App\Http\Middleware\Admin;
 
 ##User login
-Route::get('index', function () {
-    return view('cinema.welcome', [
-        'title' => 'Trang chủ'
-    ]);
-});
+Route::get('index', [CinemaController::class, 'index']);
+Route::get('/', [CinemaController::class, 'index']);
+//Route::get('index', function (){
+//    return view('cinema.slideshow', [
+//        'title' => 'Test'
+//    ]);
+//});
 Route::get('signin', [LoginController::class, 'index'])->name('signin');
 Route::get('signup', [LoginController::class, 'signup'])->name('signup');
 Route::post('signup/submit', [LoginController::class, 'validateSignup']);
@@ -24,9 +27,7 @@ Route::post('signin/submit', [LoginController::class, 'validateLogin']);
 Route::get('admin/login', [UserController::class, 'index'])->name('login');
 Route::post('admin/submit', [UserController::class, 'validateLogin']);
 
-Route::middleware(['auth'])->group(function (){
-    if (1) {
-
+Route::middleware(['auth', 'is_admin:1'])->group(function (){
         ## Admin
         Route::prefix('admin')->group(function () {
             Route::get('/', [MainController::class, 'index'])->name('admin');
@@ -46,8 +47,10 @@ Route::middleware(['auth'])->group(function (){
             Route::post('upload/service', [UploadController::class, 'store']);
             Route::delete('destroy/service', [UploadController::class, 'destroy']);
         });
-    }
+});
+
+Route::middleware(['auth', 'is_admin:0'])->group(function (){
     Route::prefix('dashboard')->group(function () {
-        Route::get('/', [CustomerController::class, 'index'])->name('welcome');
+        Route::get('/', [CinemaController::class, 'index'])->name('welcome');
     });
 });
