@@ -1,0 +1,151 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #146C94;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+}
+
+.movie-container {
+    margin: 20px 0;
+}
+
+.movie-container select {
+    background-color: #fff;
+    border: 0;
+    border-radius: 5px;
+    font-size: 1.6vw;
+    margin-left: 10px;
+    padding: 5px 15px 5px 15px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.container {
+    perspective: 1000px;
+    margin-bottom: 30px;
+}
+
+.seat {
+    background-color: #D9D9D9;
+    height: 2vw;
+    width: 2.2vw;
+    margin: 4px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.seat.selected {
+    background-color: #FFA33C;
+}
+
+.seat.occupied {
+    background-color: #F0DE36;
+}
+
+.seat:nth-of-type(2) {
+    margin-right: 22px;
+}
+
+.seat:nth-last-of-type(2) {
+    margin-left: 22px;
+}
+
+.seat:not(.occupied):hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.showcase .seat:not(.occupied):hover {
+    cursor: default;
+    transform: scale(1);
+}
+
+.showcase {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.showcase li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.showcase li small {
+    margin-left: 2px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.screen {
+    background-color: #fff;
+    height: 10vh;
+    width: 35vw;
+    margin: 15px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+    transform: rotateX(-35deg);
+}
+
+.button {
+    background-color: #FFA33C;
+    border: none;
+    color: white;
+    padding: 6px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2vw;
+    font-weight:bold;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+p.text {
+    margin: 5px 0;
+    font-size: 1.6vw;
+}
+
+p.text span {
+    color: #FFA33C;
+    font-weight: bold;
+    font-size: 1.6vw;
+}
+.text-center {
+    text-align: center;
+    padding: 0px;
+    margin-bottom: 0;
+    font-size: 1.6vw;
+}
+label {
+    font-size: 1.3vw;
+}
+
+small {
+    font-size: 1.3vw;
+}

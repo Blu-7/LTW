@@ -1,5 +1,6 @@
 <?php
 
+use \App\Http\Controllers\User\BookingController;
 use \App\Http\Controllers\User\LoginController;
 use \App\Http\Controllers\Admin\User\UserController;
 use \App\Http\Controllers\Admin\MainController;
@@ -19,6 +20,10 @@ Route::get('signin', [LoginController::class, 'index'])->name('signin');
 Route::get('signup', [LoginController::class, 'signup'])->name('signup');
 Route::post('signup/submit', [LoginController::class, 'validateSignup']);
 Route::post('signin/submit', [LoginController::class, 'validateLogin']);
+
+##User booking - tickets
+Route::get('booking', [BookingController::class, 'booking'])->name('booking');
+Route::get('tickets', [BookingController::class, 'tickets'])->name('tickets');
 
 ## Admin Login
 Route::get('admin/login', [UserController::class, 'index'])->name('login');
