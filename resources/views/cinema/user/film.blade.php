@@ -8,50 +8,21 @@
 </head>
 <body>
 <div>
-    <link href="./chititphim-nvcc.css" rel="stylesheet" />
-    <div class="chititphim-nvcc-container">
-        <div class="chititphim-nvcc-chititphim-nvcc">
-            <div class="chititphim-nvcc-bg">
-                <img
-                    alt="Bgphim1211"
-                    src="/bgphim1211-jh8-1500w.png"
-                    class="chititphim-nvcc-bgphim"
-                />
-                <img
-                    alt="Bgphim1211"
-                    src="/bgphim1211-59i-1500w.png"
-                    class="chititphim-nvcc-bgphim1"
-                />
-                <img
-                    alt="Bgphim1211"
-                    src="/bgphim1211-zfgz-1500w.png"
-                    class="chititphim-nvcc-bgphim2"
-                />
+    <div class="film-container">
+        <div class="film-container-div">
+            <div class="film-container-bg">
+                <img alt="Bgphim1211" src="/img/bgphim1211-jh8-1500w.png" class="film-container-bgphim" />
+                <img alt="Bgphim1211" src="/img/bgphim1211-59i-1500w.png" class="film-container-bgphim1" />
+                <img alt="Bgphim1211" src="/img/bgphim1211-zfgz-1500w.png" class="film-container-bgphim2" />
             </div>
             <div class="chititphim-nvcc-group10">
         <span class="chititphim-nvcc-text11">
           <span>NGƯỜI VỢ CUỐI CÙNG</span>
         </span>
-                <img
-                    alt="Line41211"
-                    src="/line41211-ogco.svg"
-                    class="chititphim-nvcc-line4"
-                />
-                <img
-                    alt="Line51211"
-                    src="/line51211-usee.svg"
-                    class="chititphim-nvcc-line5"
-                />
-                <img
-                    alt="image211211"
-                    src="/image211211-7ld-600h.png"
-                    class="chititphim-nvcc-image21"
-                />
-                <img
-                    alt="Rectangle111211"
-                    src="/rectangle111211-wh4-200h.png"
-                    class="chititphim-nvcc-rectangle11"
-                />
+                <img alt="Line41211" src="/img/line41211-ogco.svg" class="chititphim-nvcc-line4" />
+                <img alt="Line51211" src="/img/line51211-usee.svg" class="chititphim-nvcc-line5" />
+                <img alt="image211211" src="/img/image211211-7ld-600h.png" class="chititphim-nvcc-image21" />
+                <img alt="Rectangle111211" src="/img/rectangle111211-wh4-200h.png" class="chititphim-nvcc-rectangle11" />
                 <span class="chititphim-nvcc-text13"><span>2D</span></span>
                 <span class="chititphim-nvcc-text15">
           <span>
@@ -78,21 +49,9 @@
         </span>
             </div>
             <div class="chititphim-nvcc-loiphim">
-                <img
-                    alt="Rectangle71211"
-                    src="/rectangle71211-coyj.svg"
-                    class="chititphim-nvcc-rectangle7"
-                />
-                <img
-                    alt="Rectangle91211"
-                    src="/rectangle91211-4ih.svg"
-                    class="chititphim-nvcc-rectangle9"
-                />
-                <img
-                    alt="Rectangle81211"
-                    src="/rectangle81211-gx6r.svg"
-                    class="chititphim-nvcc-rectangle8"
-                />
+                <img alt="Rectangle71211" src="/img/rectangle71211-coyj.svg"  class="chititphim-nvcc-rectangle7" />
+                <img alt="Rectangle91211" src="/img/rectangle91211-4ih.svg"  class="chititphim-nvcc-rectangle9"  />
+                <img alt="Rectangle81211" src="/img/rectangle81211-gx6r.svg" class="chititphim-nvcc-rectangle8"  />
                 <span class="chititphim-nvcc-text28"><span>PHIM ĐANG CHIẾU</span></span>
                 <span class="chititphim-nvcc-text30"><span>PHIM SẮP CHIẾU</span></span>
                 <span class="chititphim-nvcc-text32">
