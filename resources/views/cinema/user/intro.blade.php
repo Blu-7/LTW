@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="/css/navbar.css"/>
 </head>
 <body>
-<span class="intro-intro">
+<div>
+<p class="intro-intro">
     <span>🧡CHÀO MỪNG MỌI NGƯỜI ĐẾN VỚI WEBSITE ĐẶT VÉ XEM PHIM HACIMI🧡</span>
-</span>
+</p>
 <span class="intro-text">
     <span>Hacimi là đứa con tinh thần của nhóm 19, cũng là sản phẩm của đồ án môn học Lập trình ứng dụng web. Chúng mình lấy những chữ cái trong tên của 3 đứa để đặt tên cho website này.</span>
 </span>
@@ -22,6 +23,7 @@
 <span class="intro-intro" style="top: 40vw;  color: rgba(255, 163, 60, 1);">
     <span>NHÓM THỰC HIỆN: NHÓM 19</span>
 </span>
-@include('cinema.template.footer')
+</div>
+@include("cinema.template.footer")
 </body>
 </html>

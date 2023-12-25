@@ -59,7 +59,7 @@
         </span>
             </div>
             <div class="chititphim-nvcc-group53">
-                <span class="chititphim-nvcc-text44"><span>ĐẶT VÉ</span></span>
+                <span class="button"><span class="text-book">ĐẶT VÉ</span></span>
             </div>
         </div>
     </div>

@@ -1,0 +1,10 @@
+footer {
+    padding: 20px 5px 20px 5px;
+    background-color: rgb(215, 229, 202);
+}
+p {
+    color: black;
+    font-size:120%;
+    text-align: center;
+    margin: 0;
+}

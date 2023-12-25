@@ -6031,6 +6031,7 @@ S2.define('jquery-mousewheel',[
 S2.define('jquery.select2',[
   'jquery',
   'jquery-mousewheel',
+
   './select2/core',
   './select2/defaults',
   './select2/utils'

@@ -25,6 +25,7 @@
 <script src="/template/admin/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
 <script src="/template/admin/plugins/datatables-buttons/js/buttons.print.min.js"></script>
 <script src="/template/admin/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<script src="/template/admin/plugins/jquery-multi-select/jquery.multiselect.js"></script>
 <!-- Crop Tool -->
 <script src="/template/admin/plugins/ijaboCropTool/ijaboCropTool.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>

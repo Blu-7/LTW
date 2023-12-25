@@ -1,7 +1,9 @@
 @extends('admin.home')
 
 @section('header')
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">
 <script src="/ckeditor/ckeditor.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 @endsection
 @section('content')
         <section class="content-header">
@@ -62,6 +64,24 @@
                                     <span class="error invalid-feedback end_date_error"></span>
                                 </div>
                                 <div class="form-group col-md-4">
+                                    <label for="showtime" class="col-form-label">Suất chiếu</label>
+                                    <br>
+                                    <select class="select2-selection--multiple" name="showtime[]" multiple="multiple">
+                                        <option value="time">09:00</option>
+                                        <option value="time1">10:30</option>
+                                        <option value="time2">12:00</option>
+                                        <option value="time3">13:30</option>
+                                        <option value="time4">15:00</option>
+                                        <option value="time5">16:30</option>
+                                        <option value="time6">18:00</option>
+                                        <option value="time7">19:30</option>
+                                        <option value="time8">21:00</option>
+                                        <option value="time9">22:30</option>
+                                        <option value="time10">00:00</option>
+                                    </select>
+                                    <span class="error invalid-feedback showtime_error"></span>
+                                </div>
+                                <div class="form-group col-md-4">
                                     <label for="poster" class="col-form-label">Poster</label><br>
                                     <input type="file" name="upload" id="upload">
                                     <span class="error invalid-feedback poster_error"></span>
@@ -83,6 +103,9 @@
 @endsection
 @section('footer')
     <script>
+        $('select2-selection--multiple').select2({
+            multiple:true
+        });
         CKEDITOR.replace('description');
         $(function () {
             $('#movie-form').validate({
@@ -102,7 +125,9 @@
                     poster: {
                         required: true,
                     },
-
+                    showtime: {
+                        required: true,
+                    },
                 },
                 messages: {
                     name: {
@@ -119,6 +144,9 @@
                     },
                     poster: {
                         required: "Vui lòng chọn poster phim",
+                    },
+                    showtime: {
+                        required: "Vui lòng chọn xuất chiếu",
                     },
                 },
                 errorElement: 'span',
