@@ -16,7 +16,7 @@ use App\Http\Middleware\Admin;
 use App\Http\Controllers\Cinema\SliderController;
 
 ##User login
-Route::get('index', [CinemaController::class, 'index']);
+Route::get('index', [CinemaController::class, 'index'])->name('index');
 Route::get('/', [CinemaController::class, 'index']);
 //Route::get('index', function (){
 //    return view('cinema.slideshow', [
@@ -29,13 +29,14 @@ Route::post('signup/submit', [LoginController::class, 'validateSignup']);
 Route::post('signin/submit', [LoginController::class, 'validateLogin']);
 
 ##User booking - tickets
-Route::get('booking', [BookingController::class, 'booking'])->name('booking');
+Route::get('booking/{movie}', [BookingController::class, 'booking'])->name('booking');
 Route::get('tickets', [BookingController::class, 'tickets'])->name('tickets');
 
 ##User view
 
 Route::get('intro', [IntroController::class, 'intro'])->name('intro');
-Route::get('film', [FilmController::class, 'film'])->name('film');
+Route::get('movie', [FilmController::class, 'movie'])->name('movie');
+Route::get('movie/detail/{movie}', [FilmController::class, 'detailMovie']);
 Route::get('contact', [IntroController::class, 'contact'])->name('contact');
 ## Admin Login
 Route::get('admin/login', [UserController::class, 'index'])->name('login');
@@ -77,4 +78,5 @@ Route::middleware(['auth', 'is_admin:0'])->group(function (){
     Route::prefix('dashboard')->group(function () {
         Route::get('/', [CinemaController::class, 'index'])->name('welcome');
     });
+    Route::get('signout', [LoginController::class, 'signout'])->name('signout');
 });

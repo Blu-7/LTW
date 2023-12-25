@@ -1,0 +1,393 @@
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h5,
+h6 {
+    font-weight: 600;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+}
+
+.header-info-explore h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    padding: 20px 0px;
+    letter-spacing: 4px;
+}
+
+.header-info-explore p {
+    line-height: 45px;
+    font-size: 35px;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    color: #777;
+}
+
+.video-explore {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+video#video-explore {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* search-box-explore */
+.search-field-explore {
+    height: 60px;
+    width: 800px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 40px;
+    outline: none;
+    font-size: 25px;
+}
+
+.search-btn-explore {
+    height: 60px;
+    width: 200px;
+    background: #ffc107;
+    border: none;
+    color: #000;
+    border-radius: 40px;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.search-btn-explore:hover {
+    background: #03a003;
+    cursor: pointer;
+    color: #fff;
+}
+
+.search-box-explore {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    margin-top: 200px;
+    display: flex;
+}
+
+/* rev-explore section */
+section#rev-explore h2 {
+    color: #343a40;
+    font-size: 45px;
+    padding-bottom: 12px;
+}
+
+section#rev-explore {
+    text-align: center;
+    padding: 100px 0px;
+}
+
+section#rev-explore p {
+    color: #777;
+    text-align: center;
+    font-size: 22px;
+}
+
+/* Slides Section */
+.slides {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+.slide_1 {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 60px;
+    min-width: 60px;
+    height: 300px;
+    border-radius: 40px;
+    margin: 0 15px;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.slide_1:hover {
+    min-width: 300px;
+}
+
+.slide_1:hover .slide-info {
+    transform: rotate(0deg);
+    font-size: 28px;
+    left: 20px;
+    bottom: 20px;
+}
+
+.slide-info {
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    color: #fff;
+    transform: rotate(-90deg);
+    font-size: 17px;
+    font-weight: 700;
+    transition: all 0.5s ease;
+    font-family: "Montserrat", sans-serif;
+}
+
+/*Để cho đẹp*/
+#beauty {
+    background-image: url(/assets/images/explore-beauty/background2.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+    background-blend-mode: overlay;
+}
+
+h3 {
+    font-size: 50px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+/* Gallery-Explore Section */
+section#list-gallery-explore {
+    margin: 80px 0px 20px;
+}
+
+button.button-explore {
+    background-color: #039103;
+    color: #fff;
+    border: 1px solid #039103;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border-radius: 40px;
+    font-size: 25px;
+    width: 200px;
+    height: 60px;
+    margin: 10px 30px;
+}
+
+.row .explore-btn-par .active {
+    background-color: #fff;
+    color: #039103;
+    outline: none;
+}
+
+section#list-gallery-explore p {
+    color: #777;
+    text-align: center;
+    font-size: 22px;
+    padding: 30px 0px;
+}
+
+/*Gallery-Explore*/
+.content-gallery-explore {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-2-custom {
+    flex: 0 0 auto;
+    width: 10%;
+}
+
+.content-info h5 {
+    font-size: 32px;
+    color: black;
+    letter-spacing: 1px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content-info h6 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #111;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    line-height: 32px;
+    margin: 0 0 72px;
+    text-align: justify;
+
+}
+.fa-map-marker-alt {
+    padding-right: 10px;
+    color: #039103;
+}
+
+.star {
+    position: absolute;
+    color: lightgray;
+}
+
+.checked {
+    color: #ffc107;
+}
+
+.heart a{
+    font-size: 30px;
+    cursor: pointer;
+    width: 30px;
+    border: none;
+    background-color: #ffffff;
+}
+
+a {
+    color:lightgray
+}
+
+
+.heart a:hover{
+    color: #df0000;
+}
+
+.filled{
+    color: #df0000;
+}
+
+.address {
+    text-align: justify;
+    padding: 14px 10px 10px 10px;
+    font-size: 14px;
+    height: 50px;
+}
+
+.detail {
+    transition: all 0.5s ease;
+    font-size: 24px;
+    height: 36px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.detail a {
+    color: #777;
+}
+
+.detail a:hover {
+    color: #eeb200;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.each-content {
+    display: flex;
+    flex-wrap: nowrap; /* Ngăn các thành phần tràn xuống hàng mới */
+    justify-content: space-between; /* Phân bố các thành phần theo chiều ngang */
+    align-items: stretch;
+    position: relative;
+    background: #fff;
+    width: 60%;
+    height: 540px;
+    margin: 35px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 10%);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.each-content:hover {
+    box-shadow: 0 5px 25px rgb(1 1 1 / 40%);
+}
+
+.content-image {
+    overflow: hidden;
+    width: 360px;
+    min-width: 360px;
+    height: 540px;
+}
+
+.image img {
+    display: flex;
+    width: 360px;
+    height: 540px;
+    transition: all 0.5s ease-in-out;
+}
+
+.image:hover img {
+    transform: scale(1.3);
+}
+
+
+.active {
+    background: #039103;
+}
+
+.disable {
+    background: #ccc;
+}
+
+.btn-readmore {
+    color: #fff;
+    background-color: #004d00;
+    border-color: #004d00;
+    box-shadow: none;
+}
+
+.btn-readmore:hover {
+    color: #fff;
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.modal-title-custom {
+    margin-bottom: 0;
+    line-height: 1.5;
+    color: black;
+}
+
+.button-81:hover {
+    background-color: #1e293b;
+    color: #fff;
+}
+
+.button-81 {
+    background-color: #fff;
+    border: 0 solid #e2e8f0;
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+    color: #0d172a;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1;
+    padding: 1rem 1.6rem;
+    text-align: center;
+    text-decoration: none #0d172a solid;
+    text-decoration-thickness: auto;
+    transition: all .1s cubic-bezier(.4, 0, .2, 1);
+    box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}

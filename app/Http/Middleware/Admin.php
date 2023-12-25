@@ -17,7 +17,7 @@ class Admin
      */
     public function handle($request, Closure $next, $is_admin)
     {
-        if(auth()->check() && auth()->user()->is_admin == 1){
+        if(auth()->check() && auth()->user()->is_admin == $is_admin){
             return $next($request);
         }
         abort(403);

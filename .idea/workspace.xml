@@ -4,17 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76b7fcb7-8504-47bb-a3ad-1758291ab223" name="Changes" comment="File migration">
-      <change afterPath="$PROJECT_DIR$/app/Http/Services/Slider/SliderService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/sliders/all.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/sliders/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/sliders/edit.blade.php" afterDir="false" />
+    <list default="true" id="76b7fcb7-8504-47bb-a3ad-1758291ab223" name="Changes" comment="update">
+      <change afterPath="$PROJECT_DIR$/public/assets/css/detail-phim.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/css/phim.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/explore-beauty/explore1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/khampha-tungnoi/slider/controls.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/backtop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/drag-and-drop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/export-pdf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/extrenaljq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/fontawesome.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/jquery-3.1.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/lightslider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/mainclient.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/navigation-auto.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/pagination-hdv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/phim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/readmore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/upload-img.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/cinema/user/detail.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/cinema/user/movie.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Helpers/Helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/Helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Cinema/CustomerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Cinema/CustomerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/template/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/template/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/cinema/slideshow.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cinema/slideshow.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/FilmController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/FilmController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Services/Cinema/CinemaService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Services/Cinema/CinemaService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/film.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/film.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cinema/template/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cinema/template/main.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/cinema/template/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cinema/template/navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cinema/user/film.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +41,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable path="composer" />
@@ -149,8 +168,9 @@
     "JavaScript Debug.Controller.php.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "add-intro",
-    "last_opened_file_path": "D:/wamp64/www/cinema_app/resources/views/admin/sliders",
+    "last_opened_file_path": "D:/wamp64/www/cinema_app/public",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -161,6 +181,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\wamp64\www\cinema_app\public" />
       <recent name="D:\wamp64\www\cinema_app\resources\views\admin\sliders" />
       <recent name="D:\wamp64\www\cinema_app\resources\views\cinema\template" />
       <recent name="D:\DAI_HOC\LTW\wamp\www\LTW" />
@@ -191,6 +212,8 @@
       <option name="presentableId" value="Default" />
       <updated>1703327612176</updated>
       <workItem from="1703327613422" duration="28425000" />
+      <workItem from="1703466535437" duration="5909000" />
+      <workItem from="1703516588268" duration="16012000" />
     </task>
     <task id="LOCAL-00001" summary="add intro">
       <option name="closed" value="true" />

@@ -6,6 +6,7 @@ use App\Http\Requests\Customer\SignInRequest;
 use App\Http\Requests\Customer\SignUpRequest;
 use App\Http\Services\User\UserService;
 use App\User;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 
@@ -52,6 +53,7 @@ class LoginController extends Controller
             $user->name = $request->input('name');
             $user->password = bcrypt($request->input('password'));
             $user->email = $request->input('email');
+            $user->is_admin = 0;
             $user->save();
             Session::flash('success', 'Đăng ký thành công');
         }
@@ -60,5 +62,12 @@ class LoginController extends Controller
             return false;
         };
         return redirect()->back();
+    }
+
+    public function signout(Request $request){
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        return redirect()->route('index');
     }
 }

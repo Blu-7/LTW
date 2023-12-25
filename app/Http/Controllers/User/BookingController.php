@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\User;
 
+use App\Movie;
 use App\User;
 use App\Http\Services\User\UserService;
 use Illuminate\Http\Request;
@@ -11,10 +12,11 @@ use Illuminate\Support\Facades\Session;
 
 class BookingController extends Controller
 {
-    public function booking()
+    public function booking(Movie $movie)
     {
         return view('cinema.user.booking', [
-            'title' => 'Hacimi - Chọn ghế'
+            'title' => 'Hacimi - Chọn ghế',
+            'movie' => $movie
         ]);
     }
     public function tickets()

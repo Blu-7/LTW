@@ -13,4 +13,9 @@ class CinemaService
         return $sliders;
     }
 
+    public function getMovies(){
+        $movies = DB::select("SELECT * FROM movies WHERE deleted = 0 ORDER BY created_at DESC");
+        return $movies;
+    }
+
 }

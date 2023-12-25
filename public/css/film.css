@@ -146,13 +146,15 @@
     text-decoration: none;
 }
 .chititphim-nvcc-loiphim {
-    top: 121px;
-    left: 226px;
-    width: 956px;
-    height: 62px;
-    display: flex;
+    top:15%;
+    left: 20%;
+    right: 0%;
+    width: 100%;
+    height: auto;
+    display: block;
     position: absolute;
-    align-items: flex-start;
+    align-items: center;
+    align-content: center;
     flex-shrink: 1;
 }
 .chititphim-nvcc-rectangle7 {
