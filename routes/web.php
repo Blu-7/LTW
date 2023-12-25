@@ -27,11 +27,11 @@ Route::get('signup', [LoginController::class, 'signup'])->name('signup');
 Route::post('signup/submit', [LoginController::class, 'validateSignup']);
 Route::post('signin/submit', [LoginController::class, 'validateLogin']);
 
-##User booking - tickets
+##User booking - tickets - Payment
 Route::get('booking', [BookingController::class, 'booking'])->name('booking');
 Route::get('tickets', [BookingController::class, 'tickets'])->name('tickets');
 Route::get('done', [BookingController::class, 'done'])->name('done');
-
+Route::get('payment', [BookingController::class, 'payment'])->name('payment');
 ##User view
 
 Route::get('intro', [IntroController::class, 'intro'])->name('intro');
