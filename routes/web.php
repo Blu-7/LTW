@@ -31,6 +31,7 @@ Route::post('signin/submit', [LoginController::class, 'validateLogin']);
 ##User booking - tickets
 Route::get('booking/{movie}', [BookingController::class, 'booking'])->name('booking');
 Route::get('tickets', [BookingController::class, 'tickets'])->name('tickets');
+Route::get('done', [BookingController::class, 'done'])->name('done');
 
 ##User view
 

@@ -3,7 +3,7 @@
 {{--    @include('cinema.template.navbar_custom')--}}
     @include('cinema.slider.header')
 @endsection
-@section('slideshow')
+@section('content')
     <style>
         .slideshow-body {
             height: 100%;

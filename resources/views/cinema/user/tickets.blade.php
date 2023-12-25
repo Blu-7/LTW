@@ -22,6 +22,15 @@
                 priceInput.value = totalPrice.toLocaleString() + ' đồng';
             }
         });
+        const seatButton = document.getElementById("seatButton");
+
+        seatButton.addEventListener("click", function() {
+            // redirect booking
+            window.location.href = "http://127.0.0.1:8000/booking";
+        });
+        function Book() {
+            window.location.href = "/booking";
+        }
     </script>
 </head>
 <body>
@@ -62,8 +71,8 @@
             <label for="price">Thành tiền:</label>
             <input type="text" id="price" name="price" readonly>
         </div>
-        <input class="button" type="submit" value = "Chọn ghế">
     </form>
+    <button class="seatButton" onclick="Book()">Chọn ghế</button>
 </div>
 @include('cinema.template.footer')
 </body>
