@@ -2,7 +2,7 @@
 @section('header')
     @include('cinema.slider.header')
 @endsection
-@section('slideshow')
+@section('content')
     <style>
         .slideshow-body {
             height: 100%;

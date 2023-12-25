@@ -23,4 +23,10 @@ class BookingController extends Controller
             'title' => 'Hacimi - Đặt vé'
         ]);
     }
+    public function done()
+    {
+        return view('cinema.user.done', [
+            'title' => 'Hacimi - Thanh toán thành công'
+        ]);
+    }
 }

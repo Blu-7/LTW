@@ -4,9 +4,10 @@ body {
 }
 
 .container {
+    padding-top: 20px; /* Chiều cao của header */
+    padding-bottom: 20px; /* Chiều cao của footer */
     max-width: 900px;
     margin: 0 auto;
-    padding: 20px;
     background-color: rgba(217, 217, 217, 0.1);
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -82,7 +83,7 @@ th {
     color: white;
     cursor: pointer;
 }
-.button {
+.seatButton {
     background-color: rgba(70, 130, 169, 0.97);
     border: none;
     color: white;

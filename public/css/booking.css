@@ -16,9 +16,13 @@ body {
     font-family: 'Lato', sans-serif;
     margin: 0;
 }
+.main-container {
+    padding-top: 80px; /* Chiều cao của header */
+    padding-bottom: 20px; /* Chiều cao của footer */
 
+}
 .movie-container {
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .movie-container select {
@@ -35,7 +39,7 @@ body {
 
 .container {
     perspective: 1000px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .seat {
