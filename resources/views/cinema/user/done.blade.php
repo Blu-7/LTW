@@ -1,11 +1,9 @@
 @extends('cinema.template.main')
 @section('header')
-    @include('cinema.slider.header')
     <!-- Insert file booking.css -->
     <link rel="stylesheet" href="/css/done.css"/>
 @endsection
 @section('content')
-
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -17,5 +15,4 @@
             </div>
 @endsection
 @section('footer')
-    @include('cinema.slider.footer')
 @endsection

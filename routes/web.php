@@ -28,10 +28,13 @@ Route::get('signup', [LoginController::class, 'signup'])->name('signup');
 Route::post('signup/submit', [LoginController::class, 'validateSignup']);
 Route::post('signin/submit', [LoginController::class, 'validateLogin']);
 
+Route::get('App\Http\Controllers\Controller\BookingController@done');
+
 ##User booking - tickets
 Route::get('booking/{movie}', [BookingController::class, 'booking'])->name('booking');
 Route::get('tickets', [BookingController::class, 'tickets'])->name('tickets');
-Route::get('done', [BookingController::class, 'done'])->name('done');
+Route::get('done/', [BookingController::class, 'done'])->name('done');
+Route::get('done/', ['uses' => 'AboutController@done']);
 
 ##User view
 
@@ -80,4 +83,7 @@ Route::middleware(['auth', 'is_admin:0'])->group(function (){
         Route::get('/', [CinemaController::class, 'index'])->name('welcome');
     });
     Route::get('signout', [LoginController::class, 'signout'])->name('signout');
+//    Route::post('booking/submit', [BookingController::class, 'forward']);
 });
+
+Route::post('booking/submit', [BookingController::class, 'forward']);

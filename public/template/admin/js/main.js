@@ -481,7 +481,6 @@ function removeRow(id, url, tableId) {
                 data: {id},
                 url: url,
                 success: function (result) {
-                    console.log(result)
                     if(result.success === true) {
                         // $('#' + tableId + ' tbody #' + id).remove();
                         setCount();
