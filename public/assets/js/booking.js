@@ -88,7 +88,6 @@ function populateUI() {
             }
             seat.push(selected[key].attributes.name.value)
         }
-        // form.append(money, seat);
 
         $.ajax({
             type: 'POST',
@@ -97,5 +96,5 @@ function populateUI() {
             success: function(result) {
             }
         })
-        // window.location.href = "/done";
+        window.location.href = "/payment";
 }

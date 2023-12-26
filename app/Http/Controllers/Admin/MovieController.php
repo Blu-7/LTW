@@ -26,7 +26,6 @@ class MovieController extends Controller
     }
 
     public function store(CreateFormRequest $request){
-
         $result = $this->movieService->create($request);
 
         if($result){

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateShowsTable extends Migration
+class CreateBookingsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,15 @@ class CreateShowsTable extends Migration
      */
     public function up()
     {
-        Schema::create('shows', function (Blueprint $table) {
+        Schema::create('bookings', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
-            $table->integer('date');
-            $table->time('time');
-            $table->string('status')->nullable();
-            $table->boolean('deleted')->default(0);
-            $table->string('movie_id');
+            $table->string('status');
+            $table->date('date');
+            $table->integer('seat');
+            $table->boolean('deleted');
+            $table->integer('user_id');
+            $table->integer('show_id')->nullable();
+            $table->integer('payment_id')->nullable();
             $table->timestamps();
         });
     }
@@ -32,6 +33,6 @@ class CreateShowsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('shows');
+        Schema::dropIfExists('bookings');
     }
 }

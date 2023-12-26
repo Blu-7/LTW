@@ -31,15 +31,14 @@ Route::post('signin/submit', [LoginController::class, 'validateLogin']);
 Route::get('App\Http\Controllers\Controller\BookingController@done');
 
 ##User booking - tickets
-Route::get('booking/{movie}', [BookingController::class, 'booking'])->name('booking');
-##User booking - tickets - Payment
-Route::get('booking', [BookingController::class, 'booking'])->name('booking');
-Route::get('tickets', [BookingController::class, 'tickets'])->name('tickets');
-Route::get('done/', [BookingController::class, 'done'])->name('done');
-Route::get('done/', ['uses' => 'AboutController@done']);
-
-Route::get('done', [BookingController::class, 'done'])->name('done');
-Route::get('payment', [BookingController::class, 'payment'])->name('payment');
+//Route::get('booking/{movie}', [BookingController::class, 'booking'])->name('booking');
+//##User booking - tickets - Payment
+//Route::get('tickets', [BookingController::class, 'tickets'])->name('tickets');
+//Route::get('done/', [BookingController::class, 'done'])->name('done');
+//Route::get('done/', ['uses' => 'AboutController@done']);
+//
+//Route::get('done', [BookingController::class, 'done'])->name('done');
+//Route::get('payment', [BookingController::class, 'payment'])->name('payment');
 ##User view
 
 Route::get('intro', [IntroController::class, 'intro'])->name('intro');
@@ -88,6 +87,15 @@ Route::middleware(['auth', 'is_admin:0'])->group(function (){
     });
     Route::get('signout', [LoginController::class, 'signout'])->name('signout');
     Route::post('booking/submit', [BookingController::class, 'forward']);
+    ##User booking - tickets
+    Route::get('booking/{movie}', [BookingController::class, 'booking'])->name('booking');
+##User booking - tickets - Payment
+    Route::get('tickets', [BookingController::class, 'tickets'])->name('tickets');
+    Route::get('done/', [BookingController::class, 'done'])->name('done');
+    Route::get('done/', ['uses' => 'AboutController@done']);
+
+    Route::get('done', [BookingController::class, 'done'])->name('done');
+    Route::get('payment', [BookingController::class, 'payment'])->name('payment');
 });
 
-//Route::post('booking/submit', [BookingController::class, 'forward']);
+Route::post('booking/submit', [BookingController::class, 'forward']);

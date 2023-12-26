@@ -97,7 +97,6 @@
 
 @section('footer')
     <script>
-        CKEDITOR.replace('description');
         $(function () {
             $('#edit-movie-form').validate({
                 rules: {

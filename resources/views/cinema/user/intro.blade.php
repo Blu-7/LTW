@@ -24,6 +24,6 @@
     <span>NHÓM THỰC HIỆN: NHÓM 19</span>
 </span>
 </div>
-@include("cinema.template.footer")
+{{--@include("cinema.template.footer")--}}
 </body>
 </html>

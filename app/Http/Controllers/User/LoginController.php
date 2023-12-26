@@ -42,7 +42,7 @@ class LoginController extends Controller
             $result = $this->userService->getUser($request);
             Session::put('user', $result);
             return redirect()->route('welcome');
-        }
+        };
         Session::flash('error', 'Sai email hoặc mật khẩu');
         return redirect()->back();
     }

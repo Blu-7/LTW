@@ -4,36 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76b7fcb7-8504-47bb-a3ad-1758291ab223" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/public/assets/css/detail-phim.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/css/phim.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/explore-beauty/explore1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/khampha-tungnoi/slider/controls.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/backtop.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/drag-and-drop.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/export-pdf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/extrenaljq.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/fontawesome.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/jquery-3.1.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/lightslider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/mainclient.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/navigation-auto.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/pagination-hdv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/phim.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/readmore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/upload-img.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/cinema/user/detail.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/cinema/user/movie.blade.php" afterDir="false" />
+    <list default="true" id="b3e69691-dd38-49c1-98c9-4c74c5d739a2" name="Changes" comment="update">
+      <change afterPath="$PROJECT_DIR$/app/Http/Services/User/BookingService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/FilmController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/FilmController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/MovieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/MovieController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/BookingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/BookingController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/LoginController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Services/Cinema/CinemaService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Services/Cinema/CinemaService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/film.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/film.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/cinema/template/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cinema/template/main.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/cinema/template/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cinema/template/navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/cinema/user/film.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Services/Movie/MovieService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Services/Movie/MovieService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Show.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Show.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2023_12_25_212725_create_shows_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2023_12_25_212725_create_shows_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/phim.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/phim.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/backtop.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/booking.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/booking.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/drag-and-drop.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/export-pdf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/extrenaljq.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/fontawesome.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/mainclient.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/navigation-auto.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/pagination-hdv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/readmore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/upload-img.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/booking.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/booking.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template/admin/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/template/admin/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/movies/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/movies/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/movies/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/movies/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cinema/template/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cinema/template/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cinema/user/booking.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cinema/user/booking.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cinema/user/intro.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cinema/user/intro.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cinema/user/payment.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cinema/user/payment.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -163,22 +163,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JavaScript Debug.Controller.php.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "add-intro",
-    "last_opened_file_path": "D:/wamp64/www/cinema_app/public",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.Controller.php.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;add-intro&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/wamp64/www/cinema_app/public&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\wamp64\www\cinema_app\public" />
@@ -206,7 +206,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="76b7fcb7-8504-47bb-a3ad-1758291ab223" name="Changes" comment="" />
+      <changelist id="b3e69691-dd38-49c1-98c9-4c74c5d739a2" name="Changes" comment="update" />
       <created>1703327612176</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -214,6 +214,7 @@
       <workItem from="1703327613422" duration="28425000" />
       <workItem from="1703466535437" duration="5909000" />
       <workItem from="1703516588268" duration="16012000" />
+      <workItem from="1703560638948" duration="2294000" />
     </task>
     <task id="LOCAL-00001" summary="add intro">
       <option name="closed" value="true" />

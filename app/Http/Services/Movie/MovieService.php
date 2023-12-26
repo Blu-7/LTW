@@ -2,9 +2,12 @@
 
 namespace App\Http\Services\Movie;
 
+use App\Models\Show;
 use App\Movie;
 use App\Http\Services\Upload\uploadService;
 use Carbon\Carbon;
+use DateInterval;
+use DatePeriod;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Str;
@@ -32,6 +35,25 @@ class MovieService
             Session::flash('error', $err->getMessage());
             return false;
         }
+//        try {
+//            $begin = $request->input('start_date');
+//            $end = $request->input('end_date');
+//            $daterange = new DatePeriod($begin, new DateInterval('P1D'), $end);
+//            foreach($daterange as $date){
+//                foreach($request->showtime as $time)
+//                Show::create([
+//                    'name' => (string)$request->input('name'),
+//                    'date' => $date,
+//                    'time' => $time,
+//                    'status' => 'Active',
+//                    'deleted' => 0,
+//                    'movie_id' => $request
+//                ]);
+//            }
+//        }catch (\Exception $err){
+//            Session::flash('error', $err->getMessage());
+//            return false;
+//        }
         return true;
     }
 

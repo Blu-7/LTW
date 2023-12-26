@@ -3,6 +3,7 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
 
 <link rel="stylesheet" href="/css/footer.css">
+<div style="bottom: 0">
 <footer>
     <div>
         <p><strong>Công ty TNHH Phát triển Ứng dụng Hacimi</strong></p>
@@ -11,5 +12,6 @@
         <p> Powered by <a href="https://github.com/Blu-7/LTW">🧡Hacimi</a></p>
     </div>
 </footer>
+</div>
 
 @yield('footer')

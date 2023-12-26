@@ -10,5 +10,9 @@ class Show extends Model
         'name',
         'deleted',
         'poster',
+        'date',
+        'time',
+        'status',
+        'movie_id',
     ];
 }

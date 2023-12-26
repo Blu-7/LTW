@@ -30,11 +30,20 @@
         <div class="form-field d-flex align-items-center">
             <input type="password" name="password_bk" id="password_bk" placeholder="Mật khẩu Smart banking">
         </div>
-        <button class="btn "> Thanh toán</button>
-        <button class="btn mt-3 "> Quay lại</button>
+        <a href="{{route('done')}}">
+        <button class="btn mt-3" onclick="success()"> Thanh toán</button>
+        </a>
+        <a href="{{redirect()->route('movie')}}">
+        <button class="btn mt-3"> Quay lại</button>
+        </a>
         @csrf
     </form>
 </div>
 @include('cinema.template.footer')
 </body>
 </html>
+<script type="text/javascript">
+    function success(){
+        window.location.href = "/done";
+    }
+</script>

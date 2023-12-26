@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\User;
 
+use App\Http\Services\User\BookingService;
 use App\Movie;
 use App\User;
 use App\Http\Services\User\UserService;
@@ -13,6 +14,14 @@ use Illuminate\Support\Facades\Session;
 
 class BookingController extends Controller
 {
+    protected $bookingService;
+
+    public function __construct(BookingService $bookingService)
+    {
+        $this->bookingService = $bookingService;
+    }
+
+
     public function booking(Movie $movie)
     {
         return view('cinema.user.booking', [
@@ -28,31 +37,17 @@ class BookingController extends Controller
     }
     public function done()
     {
-        $data = array();
-        if(Session::has('data'))
-            $data = Session::get('data');
         return view('cinema.user.done', [
             'title' => 'Hacimi - Thanh toán thành công',
-            'data' => $data
         ]);
     }
 
     public function forward(Request $request){
-        $data = $request->all();
-        $title = 'Test';
-//        dd($request->all());
-//        dd($request['money']);
-        Session::flash('data', $data);
-//        $view = view('cinema.user.done', compact('title'))->render();
-        $returnHtml = view('cinema.user.done')->with('title', $title)->render();
-        return response()->json(array('success' => true, 'html'=> $returnHtml));
-//        return view('cinema.user.done', [
-//            'title' => 'Done',
-//            'data' => $data
-//        ]);
-//        Session::flash('data', $data);
-//        return Redirect::action('App\Http\Controllers\Controller\BookingController@done');
-//        return redirect()->route('done',  $data);
+        $result = $this->bookingService->create($request);
+        if($result){
+            return true;
+        }
+        return false;
     }
     public function payment()
     {
