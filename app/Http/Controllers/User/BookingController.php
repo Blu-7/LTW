@@ -54,4 +54,10 @@ class BookingController extends Controller
 //        return Redirect::action('App\Http\Controllers\Controller\BookingController@done');
 //        return redirect()->route('done',  $data);
     }
+    public function payment()
+    {
+        return view('cinema.user.payment', [
+            'title' => 'Hacimi - Thanh toán'
+        ]);
+    }
 }
