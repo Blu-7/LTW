@@ -23,4 +23,6 @@
 <link rel="stylesheet" href="/template/admin/plugins/ijaboCropTool/ijaboCropTool.min.css">
 <!-- SweetAlert2 -->
 <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+<!-- Plugin -->
+<link rel="stylesheet" href="/template/admin/plugins/jquery-multi-select/jquery.multiselect.css">
 @yield('header')
