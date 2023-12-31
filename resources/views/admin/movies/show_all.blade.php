@@ -52,6 +52,7 @@
                     </thead>
 
                     <tbody>
+                    {{--Gọi helper để load lên từng ảnh--}}
                     {!! \App\Helpers\Helper::list($list) !!}
                     </tbody>
                 </table>

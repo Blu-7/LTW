@@ -23,12 +23,13 @@ Route::get('/', [CinemaController::class, 'index']);
 //        'title' => 'Test'
 //    ]);
 //});
+
+## Các routing cho việc đăng nhập, đăng ký của user
 Route::get('signin', [LoginController::class, 'index'])->name('signin');
 Route::get('signup', [LoginController::class, 'signup'])->name('signup');
 Route::post('signup/submit', [LoginController::class, 'validateSignup']);
 Route::post('signin/submit', [LoginController::class, 'validateLogin']);
 
-Route::get('App\Http\Controllers\Controller\BookingController@done');
 
 ##User booking - tickets
 //Route::get('booking/{movie}', [BookingController::class, 'booking'])->name('booking');
@@ -39,8 +40,7 @@ Route::get('App\Http\Controllers\Controller\BookingController@done');
 //
 //Route::get('done', [BookingController::class, 'done'])->name('done');
 //Route::get('payment', [BookingController::class, 'payment'])->name('payment');
-##User view
-
+##Các view của user về trang booking phim
 Route::get('intro', [IntroController::class, 'intro'])->name('intro');
 Route::get('movie', [FilmController::class, 'movie'])->name('movie');
 Route::get('movie/detail/{movie}', [FilmController::class, 'detailMovie']);
@@ -48,14 +48,14 @@ Route::get('contact', [IntroController::class, 'contact'])->name('contact');
 ## Admin Login
 Route::get('admin/login', [UserController::class, 'index'])->name('login');
 Route::post('admin/submit', [UserController::class, 'validateLogin']);
-
+## Routing có kiểm tra quyền admin bằng middleware
 Route::middleware(['auth', 'is_admin:1'])->group(function (){
-        ## Admin
+        ## Admin đăng nhập/đăng ký
         Route::prefix('admin')->group(function () {
             Route::get('/', [MainController::class, 'index'])->name('admin');
             Route::get('main', [MainController::class, 'index']);
             Route::get('logout', [UserController::class, 'logout']);
-            ## Movies
+            ## Các routing như list, sửa, thêm xóa phim
             Route::prefix('movies')->group(function () {
                 Route::get('all', [MovieController::class, 'showAll'])->name('all');
                 Route::get('edit/{movie}', [MovieController::class, 'show']);
@@ -65,7 +65,7 @@ Route::middleware(['auth', 'is_admin:1'])->group(function (){
                 Route::post('create', [MovieController::class, 'store'])->name('movies.store');
             });
 
-            ## Sliders
+            ## Các routing như list, sửa, thêm xóa slider
             Route::prefix('sliders')->group(function (){
                 Route::get('create', [SliderController::class, 'create']);
                 Route::get('edit/{slider}', [SliderController::class, 'show']);
@@ -75,12 +75,12 @@ Route::middleware(['auth', 'is_admin:1'])->group(function (){
                 Route::post('create/submit', [SliderController::class, 'store'])->name('sliders.store');
             });
 
-            ##Upload
+            ## Routing để gọi controller upload xử lý hình ảnh
             Route::post('upload/service', [UploadController::class, 'store']);
             Route::delete('destroy/service', [UploadController::class, 'destroy']);
         });
 });
-
+## Routing dành cho User ko có quyên admin
 Route::middleware(['auth', 'is_admin:0'])->group(function (){
     Route::prefix('dashboard')->group(function () {
         Route::get('/', [CinemaController::class, 'index'])->name('welcome');

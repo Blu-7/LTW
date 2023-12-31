@@ -1,4 +1,5 @@
 @if ($errors->any())
+{{--Băt alert theo Session--}}
     <div class="alert alert-danger alert-dismissible fade show" role="alert">
         @foreach ($errors->all() as $error)
             <li>{{ $error }}</li>

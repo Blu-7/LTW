@@ -82,19 +82,4 @@ class PaymentController extends Controller
     {
         //
     }
-    public function validateSignup(SignUpRequest $request){
-        try{
-            $user = new User();
-            $user->name = $request->input('name');
-            $user->password = bcrypt($request->input('password'));
-            $user->email = $request->input('email');
-            $user->save();
-            Session::flash('success', 'Đăng ký thành công');
-        }
-        catch (\Exception $err){
-            Session::flash('error', $err->getMessage());
-            return false;
-        };
-        return redirect()->back();
-    }
 }

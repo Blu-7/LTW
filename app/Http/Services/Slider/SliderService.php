@@ -16,6 +16,7 @@ class SliderService
         $this->uploadService = $uploadService;
     }
     public function create($request){
+        ## Tạo mới record slider
         try {
             Slider::create([
                 'name' => (string) $request->input('name'),
@@ -32,11 +33,13 @@ class SliderService
 
     public function get()
     {
+        ## Query hết các record của sliders
         $slider = DB::select("SELECT * FROM sliders WHERE deleted = 0 ORDER BY created_at DESC");
         return $slider;
     }
 
     public function destroy($request){
+        ## Tìm và set deleted = 1
         $id = $request->input('id');
         $movie = Slider::where('id', $id)->first();
         $time = Carbon::now();
@@ -47,6 +50,7 @@ class SliderService
     }
 
     public function update($movie, $request){
+        ## Cập nhật record
         try {
             $movie->fill($request->input());
             $movie->save();

@@ -1,6 +1,7 @@
 @extends('admin.home')
 
 @section('header')
+{{--Thêm script custom vào--}}
 <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">
 <script src="/ckeditor/ckeditor.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
@@ -35,7 +36,7 @@
                             <h3 class="card-title"></h3>
                         </div>
 
-
+                        {{--Form tạo mới phim--}}
                     <form action="{{route('movies.store')}}" method="POST" enctype="multipart/form-data" id="movie-form">
                         <div class="card-body">
                             <div class="row justify-content-center">

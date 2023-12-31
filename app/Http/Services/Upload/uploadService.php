@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Storage;
 class uploadService
 {
     public function store($request)
+        ## Lưu hình ảnh xuống dưới local và trả về link tới hình ảnh đó
     {
         $filename = '';
         if ($request->hasFile('upload')) {
@@ -23,7 +24,7 @@ class uploadService
         }
 
     }
-
+    ## Xóa hình ảnh dưới local khi xóa record phim
     public function destroy($request)
     {
         try {

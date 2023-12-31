@@ -36,19 +36,19 @@
                     </div>
                     <!-- /.card-header -->
 
-                    <!-- form start -->
+                    <!-- form sửa phim -->
                     <form action="/admin/movies/edit/{{$movie->id}}" method="POST" enctype="multipart/form-data" id="edit-movie-form">
                         <div class="card-body">
                             <div class="row justify-content-center">
                                 <div class="form-group col-md-12">
-                                    <label for="category" class="col-form-label">Tên danh mục</label>
+                                    <label for="category" class="col-form-label">Tên Phim</label>
                                     <input type="text" name="name" value="{{$movie->name}}" class="form-control" placeholder="Tên danh mục">
                                     <span class="error invalid-feedback name_error"></span>
                                 </div>
                             </div>
                             <div class="row justify-content-center">
                                 <div class="form-group col-md-12">
-                                    <label class="col-sm-2 col-form-label">Mô tả danh mục</label>
+                                    <label class="col-sm-2 col-form-label">Mô tả Phim</label>
                                     <textarea style="resize:none" rows="5" name="description" class="form-control" id="description" placeholder="Mô tả danh mục">{{$movie->description}}</textarea>
                                     <span class="error invalid-feedback description_error"></span>
                                 </div>
@@ -65,6 +65,7 @@
                                 <div class="form-group col-md-4">
                                     <label for="image" class="col-form-label">Poster</label><br>
                                     <div class="custom-file" name="image">
+                                    {{--Load lại hình ảnh trước đó--}}
                                         <input type="file" class="custom-file-input" value="" id="upload" name="upload">
                                         <label class="custom-file-label" for="poster" name="file" id="file">{{str_replace('/storage/uploads/','', $movie->poster)}}</label>
                                         <input type="hidden" name="poster" value="{{$movie->poster}}" id="poster">

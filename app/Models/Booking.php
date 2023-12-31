@@ -15,4 +15,9 @@ class Booking extends Model
         'show_id',
         'payment_id',
     ];
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
 }

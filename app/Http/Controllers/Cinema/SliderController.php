@@ -33,6 +33,8 @@ class SliderController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    ## Trả về màn hình tạo mới 1 slider
     public function create()
     {
         return view('admin.sliders.create', [
@@ -46,6 +48,7 @@ class SliderController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+    ## Lưu trữ xuống cơ sở dữ liệu
     public function store(CreateFormRequest $request)
     {
         $result = $this->sliderService->create($request);
@@ -59,7 +62,7 @@ class SliderController extends Controller
             return false;
         }
     }
-
+    ## Lấy hết các slider và trả về màn hình
     public function showAll(){
         return view('admin.sliders.all', [
             'title' => 'Danh sách Slider',
@@ -74,6 +77,7 @@ class SliderController extends Controller
      * @param  \App\Models\Slider  $slider
      * @return \Illuminate\Http\Response
      */
+    ## Trả về màn hình sửa slider
     public function show(Slider $slider)
     {
         return view('admin.sliders.edit', [
@@ -102,6 +106,7 @@ class SliderController extends Controller
      * @param  \App\Models\Slider  $slider
      * @return \Illuminate\Http\Response
      */
+    ## Cập nhật record slider
     public function update(CreateFormRequest $request, Slider $slider)
     {
         $result = $this->sliderService->update($slider, $request);
@@ -122,6 +127,8 @@ class SliderController extends Controller
      * @param  \App\Models\Slider  $slider
      * @return \Illuminate\Http\Response
      */
+
+    ## Xóa record slider
     public function destroy(Request $request)
     {
         $result = $this->sliderService->destroy($request);

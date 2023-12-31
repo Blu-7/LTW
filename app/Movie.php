@@ -16,4 +16,9 @@ class Movie extends Model
         'slug',
         'status',
     ];
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
 }

@@ -23,6 +23,7 @@ class SignInRequest extends FormRequest
      */
     public function rules()
     {
+        ## List các rule áp dụng cho các field
         return [
             'email' => 'required|email:filter',
             'password' => 'min:6|required|',
@@ -31,6 +32,7 @@ class SignInRequest extends FormRequest
 
     public function messages() : array
     {
+        ## Các message trả về tùy theo lỗi
         return [
             'email.required'         => 'Vui lòng nhập địa chỉ email',
             'email.email:filter' => 'Vui lòng nhập đúng cú pháp email',

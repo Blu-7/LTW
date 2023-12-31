@@ -1,7 +1,7 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="/admin" class="brand-link">
-        <img src="/img/logo.png" alt="DalaHabo Logo" class="brand-image img-circle elevation-3">
+        <img src="/img/logo.png" alt="" class="brand-image img-circle elevation-3">
         <span class="brand-text font-weight-light" style="font-size: 32px;"><b>Hacimi</b></span>
     </a>
 
@@ -70,25 +70,6 @@
                     </ul>
                 </li>
 
-                <li class="nav-item">
-                    <a href="#" class="nav-link {{ (request()->is('admin/customers/all')) ? 'active' : ''}}">
-                        <i class="nav-icon fas fa-users"></i>
-                        <p>
-                            Khách hàng
-                            <i class="fas"></i>
-                        </p>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="#" class="nav-link {{ (request()->is('admin/orders/all')) ? 'active' : ''}}">
-                        <i class="nav-icon fas fa-shopping-cart"></i>
-                        <p>
-                            Yêu cầu
-                            <i class="fas"></i>
-                        </p>
-                    </a>
-                </li>
 
 
                 @can('is-admin')

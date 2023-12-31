@@ -14,6 +14,7 @@ class UploadController extends Controller
     {
         $this->uploadService = $uploadService;
     }
+    ## Lưu hình ảnh
     public function store(Request $request)
     {
         $result = $this->uploadService->store($request);
@@ -30,7 +31,7 @@ class UploadController extends Controller
             'msg' => 'Không upload được hình ảnh'
         ]);
     }
-
+    ## Xóa hình ảnh
     public function destroy(Request $request)
     {
         $result = $this->uploadService->destroy($request);

@@ -23,6 +23,7 @@ class CreateFormRequest extends FormRequest
      */
     public function rules()
     {
+        ## List các rule áp dụng cho các field
         return [
             'name' => 'required',
             'description' => 'required',
@@ -35,6 +36,7 @@ class CreateFormRequest extends FormRequest
 
     public function messages() : array
     {
+        ## Các message trả về tùy theo lỗi
         return [
             'name.required'         => 'Vui lòng nhập tên phim',
             'poster.required'       => 'Vui lòng chọn poster của phim',

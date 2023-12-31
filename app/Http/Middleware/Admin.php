@@ -15,6 +15,7 @@ class Admin
      * @param  \Closure  $next
      * @return mixed
      */
+    ## Kiểm tra quyền dựa trên field is_admin
     public function handle($request, Closure $next, $is_admin)
     {
         if(auth()->check() && (auth()->user()->is_admin == $is_admin || auth()->user()->is_admin == 1)){

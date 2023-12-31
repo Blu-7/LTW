@@ -28,7 +28,7 @@
                         </div>
 
                         <div class="detail row justify-content-center align-items-center">
-                            <a href="/booking/{{$movie->id}}" target="_blank">
+                            <a href="/booking/{{$movie->slug}}" target="_blank">
                                 <button type="button" class="button-81" role="button">Đặt vé</button>
                             </a>
                         </div>

@@ -13,18 +13,18 @@ class MovieController extends Controller
 {
 
     protected $movieService;
-
+    ## Khởi tạo một Service để xử lý dữ liệu
     public function __construct(MovieService $movieService)
     {
         $this->movieService = $movieService;
     }
-
+    ## Trả về màn hình tạo mới phim
     public function create(){
         return view('admin.movies.create', [
             'title' => 'Thêm phim mới'
         ]);
     }
-
+    ## Xử lý lưu phim
     public function store(CreateFormRequest $request){
         $result = $this->movieService->create($request);
 
@@ -37,6 +37,7 @@ class MovieController extends Controller
             return false;
         }
     }
+    ## Lấy các record rồi trả về trên trang chủ
     public function showAll(){
         return view('admin.movies.show_all', [
             'title' => 'Danh sách phim',
@@ -44,11 +45,7 @@ class MovieController extends Controller
             'list' => $this->movieService->get()
         ]);
     }
-
-    public function edit(){
-
-    }
-
+    ## Update record phim khi sửa
     public function update(Movie $movie, CreateFormRequest $request){
         $result = $this->movieService->update($movie, $request);
         if($result) {
@@ -61,7 +58,7 @@ class MovieController extends Controller
             return false;
         }
     }
-
+    ## Trả về thông tin chi tiết của phim khi edit
     public function show(Movie $movie){
         return view('admin.movies.edit', [
             'title' => 'Chỉnh sửa: ' . $movie->name,
@@ -70,7 +67,7 @@ class MovieController extends Controller
             'movie' => $movie
         ]);
     }
-
+    ## Xóa phim
     public function destroy(Request $request){
         $result = $this->movieService->destroy($request);
         if($result){

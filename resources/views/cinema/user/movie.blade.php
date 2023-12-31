@@ -27,7 +27,7 @@
             </div>
 
             <div class="detail row justify-content-center align-items-center">
-                <a href="/movie/detail/{{$movie->id}}" target="_blank">
+                <a href="/movie/detail/{{$movie->slug}}" target="_blank">
                     <button type="button" class="button-81" role="button">Chi tiết</button>
                 </a>
             </div>

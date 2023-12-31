@@ -13,7 +13,7 @@ class FilmController extends Controller
     {
         $this->cinemaService = $cinemaService;
     }
-
+    ## Trả về list các movies
     public function movie()
     {
         return view('cinema.user.movie', [
@@ -21,7 +21,7 @@ class FilmController extends Controller
             'movies' => $this->cinemaService->getMovies(),
         ]);
     }
-
+    ## Trả về chi tiết của một phim thông qua slug
     public function detailMovie(Movie $movie){
         return view('cinema.user.detail', [
             'title' => 'Khám phá',

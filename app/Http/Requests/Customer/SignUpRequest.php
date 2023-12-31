@@ -23,6 +23,7 @@ class SignUpRequest extends FormRequest
      */
     public function rules()
     {
+        ## List các rule áp dụng cho các field
         return [
             /* Đăng ký - Đăng nhập*/
             'name' => 'required',
@@ -39,6 +40,7 @@ class SignUpRequest extends FormRequest
 
     public function messages() : array
     {
+        ## Các message trả về tùy theo lỗi
         return [
             /* Đăng ký - Đăng nhập*/
             'name.required'         => 'Vui lòng nhập tên',

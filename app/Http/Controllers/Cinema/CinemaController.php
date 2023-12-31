@@ -14,7 +14,7 @@ class CinemaController extends Controller
     {
         $this->cinemaService = $cinemaService;
     }
-
+    ## Trả về màn hình slideshow trang chủ của trang
     public function index(){
         $list = $this->cinemaService->get();
         return view('cinema.slideshow', [

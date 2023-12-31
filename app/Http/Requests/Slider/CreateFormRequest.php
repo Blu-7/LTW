@@ -23,6 +23,7 @@ class CreateFormRequest extends FormRequest
      */
     public function rules()
     {
+        # List các rule áp dụng cho các field
         return [
             'name' => 'required',
             'upload' => 'mimes:jpeg,png,jpg|max:2048',
@@ -32,6 +33,7 @@ class CreateFormRequest extends FormRequest
 
     public function messages() : array
     {
+        ## Các message trả về tùy theo lỗi
         return [
             'name.required'         => 'Vui lòng nhập tên slider',
             'poster.required'       => 'Vui lòng chọn slider',
