@@ -13,7 +13,7 @@ if [[ "$code" = 200 ]]; then
     echo "Install node_modules"
     sleep(3)
 else
-    echo "Error. Please contact 0817764291!"
+    echo "Error. Please contact 0963374343!"
 fi
 npm install
 npm run watch
@@ -23,5 +23,5 @@ if [[ "$code" = 200 ]]; then
     echo "Complete. Web site is runing on "
     echo ">>>>> http://127.0.0.1 <<<<"
 else
-    echo "Error. Please contact 0817764291!"
+    echo "Error. Please contact 0963374343!"
 fi
