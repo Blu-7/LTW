@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/css/login.css"/>
 </head>
 <body>
+{{--Màn hình đăng nhập--}}
 <div class="wrapper">
     <div class="logo">
         <img src="/img/logo.png" alt="">

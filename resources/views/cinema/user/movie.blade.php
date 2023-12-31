@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css"/>
 @endsection
 @section('content')
+{{--Màn hình show hết movie--}}
 <div class="content-gallery-explore" id="beauty">
     <div class="content" id="loadPlaces">
     @foreach($movies as $key => $movie)

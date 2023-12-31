@@ -3,7 +3,7 @@
     <head>
         @include('admin.template.head')
     </head>
-
+{{--Màn hình chính của trang admin mà các màn hình khác sẽ mở rộng từ màn hình này--}}
     <body class="hold-transition sidebar-mini layout-fixed">
 
     <!-- Site wrapper -->
@@ -47,26 +47,26 @@
                         <!-- <span class="badge badge-warning navbar-badge">15</span> -->
                     </a>
                     <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                        <span class="dropdown-item dropdown-header">15 Notifications</span>
+                        <span class="dropdown-item dropdown-header"></span>
                         <div class="dropdown-divider"></div>
 
                         <a href="#" class="dropdown-item">
-                            <i class="fas fa-envelope mr-2"></i> 4 new messages
+                            <i class="fas fa-envelope mr-2"></i>
                             <!-- <span class="float-right text-muted text-sm">3 mins</span> -->
                         </a>
                         <div class="dropdown-divider"></div>
 
                         <a href="#" class="dropdown-item">
-                            <i class="fas fa-users mr-2"></i> 8 friend requests
+                            <i class="fas fa-users mr-2"></i>
                         </a>
                         <div class="dropdown-divider"></div>
 
                         <a href="#" class="dropdown-item">
-                            <i class="fas fa-file mr-2"></i> 3 new reports
+                            <i class="fas fa-file mr-2"></i>
                         </a>
                         <div class="dropdown-divider"></div>
 
-                        <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+                        <a href="#" class="dropdown-item dropdown-footer"></a>
                     </div>
                 </li>
                 <li class="nav-item border-md-right"></li>
@@ -74,11 +74,6 @@
                     <a data-toggle="dropdown" class="nav-link" href="#">
                         <div class="user-panel pb-2">
                             <div class="image">
-                                {{--                            @if(Auth::user()->image)--}}
-                                {{--                                <img src="{{Auth::user()->image}}" class="img-circle admin-picture" alt="User Image">--}}
-                                {{--                            @else--}}
-                                {{--                                <img src="/template/admin/dist/img/avatar6.png" class="img-circle admin-picture" alt="User Image">--}}
-                                {{--                            @endif--}}
                             </div>
                             <span class="ml-2 d-none d-lg-inline small admin-name">{{Auth::user()->name}}</span>
                         </div>

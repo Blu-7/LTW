@@ -33,7 +33,7 @@
                     <!-- /.card-header -->
 
                     <!-- form start -->
-                    <form action="/admin/sliders/edit/{{$slider->id}}" method="POST" enctype="multipart/form-data" id="edit-movie-form">
+                    <form action="/admin/sliders/edit/{{$slider->slug}}" method="POST" enctype="multipart/form-data" id="edit-movie-form">
                         <div class="card-body">
                             <div class="row justify-content-center">
                                 <div class="form-group col-md-6">

@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="/css/done.css"/>
 @endsection
 @section('content')
+{{--Màn hình xác nhận thanh toán thành công--}}
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 

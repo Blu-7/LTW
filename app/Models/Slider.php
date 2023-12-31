@@ -11,4 +11,9 @@ class Slider extends Model
         'deleted',
         'poster',
     ];
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
 }

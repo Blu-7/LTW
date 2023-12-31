@@ -5,10 +5,9 @@
         <span class="brand-text font-weight-light" style="font-size: 32px;"><b>Hacimi</b></span>
     </a>
 
-    <!-- Sidebar -->
+    <!-- Sidebar để show các actions của trang admin -->
     <div class="sidebar">
         <!-- Sidebar Menu -->
-        <!--  nav-legacy text-sm nav-child-indent-->
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar nav-child-indent nav-legacy flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <li class="nav-item">
@@ -20,7 +19,6 @@
                     </a>
                 </li>
 
-                <!-- Mở thì thêm class menu-open -->
                 <li class="nav-item  {{ (request()->is('admin/sliders/*')) ? 'menu-open' : ''}}">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-images"></i>
@@ -46,7 +44,6 @@
                 </li>
 
                 <li class="nav-header">KHÁM PHÁ</li>
-                <li class="nav-item {{ (request()->is('admin/categories/*')) ? 'menu-open' : ''}}">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-swatchbook"></i>
                         <p>
@@ -68,37 +65,6 @@
                             </a>
                         </li>
                     </ul>
-                </li>
-
-
-
-                @can('is-admin')
-                <li class="nav-header">QUẢN LÝ NGƯỜI DÙNG</li>
-                <li class="nav-item {{ (request()->is('admin/users/*')) ? 'menu-open' : ''}}">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-user-alt"></i>
-                        <p>
-                            Tài khoản
-                            <i class="fas fa-angle-right right pr-1"></i>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="/admin/users/all" class="nav-link {{ (request()->is('admin/users/all')) ? 'active' : ''}}">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Danh sách tài khoản</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/admin/users/create" class="nav-link {{ (request()->is('admin/users/create')) ? 'active' : ''}}">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Thêm tài khoản</p>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                @endcan
-                <!-- /.sidebar-menu -->
             </ul>
         </nav>
     </div>

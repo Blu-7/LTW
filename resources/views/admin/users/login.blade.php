@@ -6,6 +6,7 @@
 </head>
 <body>
 <div class="wrapper">
+{{--Màn hình đăng nhập chính của trang admin--}}
     <div class="logo">
         <img src="/img/logo.png" alt="">
     </div>

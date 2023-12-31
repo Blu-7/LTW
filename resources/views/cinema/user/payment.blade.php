@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/css/payment.css"/>
 </head>
 <body>
+{{--Màn hình thanh toán--}}
 <div class="wrapper">
     <div class="logo">
         <img src="/img/logo.png" alt="">
@@ -14,7 +15,7 @@
         Vui lòng điền thông tin thanh toán
     </div>
     @include('cinema.user.alert')
-    <form class="p-3 mt-3" action="/signup/submit/" method="post">
+    <form class="p-3 mt-3" action="/" method="post">
         <div class="form-field d-flex align-items-center">
             <input type="text" name="fullname" id="fullname" placeholder="Họ và tên">
         </div>

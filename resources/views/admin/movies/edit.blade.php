@@ -37,7 +37,7 @@
                     <!-- /.card-header -->
 
                     <!-- form sửa phim -->
-                    <form action="/admin/movies/edit/{{$movie->id}}" method="POST" enctype="multipart/form-data" id="edit-movie-form">
+                    <form action="/admin/movies/edit/{{$movie->slug}}" method="POST" enctype="multipart/form-data" id="edit-movie-form">
                         <div class="card-body">
                             <div class="row justify-content-center">
                                 <div class="form-group col-md-12">

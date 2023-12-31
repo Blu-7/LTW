@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="/css/booking.css"/>
 @endsection
 @section('content')
+{{--Màn hình booking chọn ghế ngồi--}}
 <div class="bodyyyy">
 <div class="movie-container">
     <!-- movie's name -->

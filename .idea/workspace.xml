@@ -5,50 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3e69691-dd38-49c1-98c9-4c74c5d739a2" name="Changes" comment="update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Helpers/CinemaHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/CinemaHelper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Helpers/Helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/Helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/MovieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/MovieController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/UploadController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/UploadController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/User/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/User/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ForgotPasswordController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Cinema/CinemaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Cinema/CinemaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Cinema/CustomerController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Cinema/SliderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Cinema/SliderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PaymentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PaymentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/FilmController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/FilmController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/CheckForMaintenanceMode.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/EncryptCookies.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/TrimStrings.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/TrustProxies.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Customer/SignInRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Customer/SignInRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Customer/SignUpRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Customer/SignUpRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Movie/CreateFormRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Movie/CreateFormRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Slider/CreateFormRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Slider/CreateFormRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Services/Cinema/CinemaService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Services/Cinema/CinemaService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Services/Movie/MovieService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Services/Movie/MovieService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Services/Slider/SliderService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Services/Slider/SliderService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Services/Upload/uploadService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Services/Upload/uploadService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Services/User/BookingService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Services/User/BookingService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Services/User/UserService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Services/User/UserService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Booking.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Booking.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Movie.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Movie.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/movies/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/movies/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Slider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/movies/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/movies/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/movies/show_all.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/movies/show_all.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/template/alert.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/template/alert.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/sliders/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/sliders/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/template/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/template/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/users/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/users/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cinema/template/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cinema/template/navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cinema/user/booking.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cinema/user/booking.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/cinema/user/detail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cinema/user/detail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cinema/user/done.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cinema/user/done.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cinema/user/intro.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cinema/user/intro.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cinema/user/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cinema/user/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/cinema/user/movie.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cinema/user/movie.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cinema/user/payment.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cinema/user/payment.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cinema/user/signup.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cinema/user/signup.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -233,6 +204,7 @@
       <workItem from="1703606735421" duration="15000" />
       <workItem from="1703608365054" duration="606000" />
       <workItem from="1704013813875" duration="3628000" />
+      <workItem from="1704032199794" duration="765000" />
     </task>
     <task id="LOCAL-00001" summary="add intro">
       <option name="closed" value="true" />

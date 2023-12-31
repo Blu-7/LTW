@@ -43,6 +43,7 @@ Route::post('signin/submit', [LoginController::class, 'validateLogin']);
 ##Các view của user về trang booking phim
 Route::get('intro', [IntroController::class, 'intro'])->name('intro');
 Route::get('movie', [FilmController::class, 'movie'])->name('movie');
+## Redirect route
 Route::get('movie/detail/{movie}', [FilmController::class, 'detailMovie']);
 Route::get('contact', [IntroController::class, 'contact'])->name('contact');
 ## Admin Login
@@ -58,6 +59,7 @@ Route::middleware(['auth', 'is_admin:1'])->group(function (){
             ## Các routing như list, sửa, thêm xóa phim
             Route::prefix('movies')->group(function () {
                 Route::get('all', [MovieController::class, 'showAll'])->name('all');
+                ## Redirect route
                 Route::get('edit/{movie}', [MovieController::class, 'show']);
                 Route::post('edit/{movie}', [MovieController::class, 'update']);
                 Route::get('create', [MovieController::class, 'create']);
@@ -68,6 +70,7 @@ Route::middleware(['auth', 'is_admin:1'])->group(function (){
             ## Các routing như list, sửa, thêm xóa slider
             Route::prefix('sliders')->group(function (){
                 Route::get('create', [SliderController::class, 'create']);
+                ## Redirect route
                 Route::get('edit/{slider}', [SliderController::class, 'show']);
                 Route::post('edit/{slider}', [SliderController::class, 'update']);
                 Route::delete('destroy', [SliderController::class, 'destroy']);

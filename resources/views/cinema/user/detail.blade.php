@@ -3,6 +3,7 @@
     <link type="text/css" rel="stylesheet" href="/assets/css/detail-phim.css">
 @endsection
 @section('content')
+{{--Màn hình hiển thị chi tiết của một phim--}}
     <div class="content-gallery-explore" id="beauty">
         <div class="content" id="loadPlaces">
                 <div class="each-content content-{{$movie->id}}">

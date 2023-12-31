@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/navbar.css"/>
 </head>
 <body>
+{{--Màn hình giới thiệu rạp chiếu phim--}}
 <div>
 <p class="intro-intro">
     <span>🧡CHÀO MỪNG MỌI NGƯỜI ĐẾN VỚI WEBSITE ĐẶT VÉ XEM PHIM HACIMI🧡</span>
